@@ -1,0 +1,6 @@
+id,univ_name,rank_usnews_2025,country_region,Rater_A,Rater_B,Dimension
+44,Universite Paris Cite,48,France,0,1,D1
+71,Georgia Institute of Technology,79,USA,1,0,D1
+80,Pennsylvania State University,92,USA,0,1,D1
+88,University of Oslo,100,Norway,1,0,D2
+44,Universite Paris Cite,48,France,0,1,D4

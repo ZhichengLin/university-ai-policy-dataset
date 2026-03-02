@@ -1,0 +1,27 @@
+"ID","University","Applies to","AI threshold (%)","Decision point","Tool","Linked to pass"
+16,"Sichuan University
+四川大学","Science/engineering/medical",15,"Graduation or thesis progression","No","Yes"
+96,"Fuzhou University
+福州大学","Outstanding thesis evaluation",15,"Outstanding thesis evaluation","No","Yes"
+16,"Sichuan University
+四川大学","Humanities & social sciences (HSS)",20,"Graduation or thesis progression","No","Yes"
+96,"Fuzhou University
+福州大学","General requirement",20,"Graduation or thesis progression","No","Yes"
+119,"Hainan University
+海南大学","Unspecified / general",20,"Graduation or thesis progression","No","Yes"
+58,"Southwest Jiaotong University
+西南交通大学","Unspecified / general",30,"Graduation or thesis progression","Yes (VIPS AIGC Detection System)","Yes"
+118,"Zhejiang Normal University
+浙江师范大学","Unspecified / general",30,"Unspecified in excerpt","No","Yes"
+123,"Guangdong University of Technology
+广东工业大学","Unspecified / general",30,"Defense eligibility","No","Yes"
+39,"Nanjing University of Aeronautics and Astronautics
+南京航空航天大学","Unspecified / general",40,"Defense eligibility","No","Yes"
+103,"Dongbei University of Finance and Economics
+东北财经大学","Unspecified / general",40,"Unspecified in excerpt","No","Yes"
+104,"Jiangsu University
+江苏大学","Unspecified / general",40,"Defense eligibility","Yes (维普 AIGC 检测)","Yes"
+121,"Nanjing University of Chinese Medicine
+南京中医药大学","Unspecified / general",40,"Unspecified in excerpt","No","Yes"
+122,"Nanjing University of Information Science & Technology
+南京信息工程大学","Unspecified / general",40,"Defense eligibility","No","Yes"

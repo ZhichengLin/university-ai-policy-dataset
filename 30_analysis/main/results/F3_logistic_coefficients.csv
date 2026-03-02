@@ -1,0 +1,37 @@
+"scenario","model","term","estimate","std_error","z_value","p_value"
+"baseline","check_framework ~ rank_z + Inst_type","(Intercept)",-1.51633705547158,1.1322420730004,-1.33923397798966,0.180494514265417
+"baseline","check_framework ~ rank_z + Inst_type","rank_z",0.344519130977365,0.252890271830693,1.36232654772903,0.173094853038323
+"baseline","check_framework ~ rank_z + Inst_type","Inst_typecomprehensive universities",0.454078001841566,1.19613786159104,0.379620122748706,0.704227421329668
+"baseline","check_framework ~ rank_z + Inst_type","Inst_typeforestry universities",1.07680185158177,1.82002049086192,0.591642707864142,0.554089868807396
+"baseline","check_framework ~ rank_z + Inst_type","Inst_typenormal (teacher education) universities",-0.192512619673166,1.37495464142528,-0.140013796726856,0.888649089556791
+"baseline","check_framework ~ rank_z + Inst_type","Inst_typescience and engineering universities",0.595789590931897,1.1799632081288,0.504922176240315,0.613613497639152
+"baseline","high_enforcement ~ rank_z + Inst_type","(Intercept)",-1.53236405025137,1.13607304613917,-1.34882528501046,0.177393091127906
+"baseline","high_enforcement ~ rank_z + Inst_type","rank_z",0.379270721891608,0.284406202060875,1.333552922346,0.182350420375162
+"baseline","high_enforcement ~ rank_z + Inst_type","Inst_typecomprehensive universities",0.0186926379399061,1.21503554359455,0.01538443713721,0.987725479324267
+"baseline","high_enforcement ~ rank_z + Inst_type","Inst_typeforestry universities",1.04849299901789,1.82376571751138,0.57490553142353,0.565355188764573
+"baseline","high_enforcement ~ rank_z + Inst_type","Inst_typenormal (teacher education) universities",-0.200190398349691,1.37728864478476,-0.145351084616672,0.884433683245616
+"baseline","high_enforcement ~ rank_z + Inst_type","Inst_typescience and engineering universities",0.0534578074854033,1.19723255029104,0.0446511477426903,0.964385373282257
+"conservative","check_framework ~ rank_z + Inst_type","(Intercept)",-1.51633705547158,1.1322420730004,-1.33923397798966,0.180494514265417
+"conservative","check_framework ~ rank_z + Inst_type","rank_z",0.344519130977365,0.252890271830693,1.36232654772903,0.173094853038323
+"conservative","check_framework ~ rank_z + Inst_type","Inst_typecomprehensive universities",0.454078001841566,1.19613786159104,0.379620122748706,0.704227421329668
+"conservative","check_framework ~ rank_z + Inst_type","Inst_typeforestry universities",1.07680185158177,1.82002049086192,0.591642707864142,0.554089868807396
+"conservative","check_framework ~ rank_z + Inst_type","Inst_typenormal (teacher education) universities",-0.192512619673166,1.37495464142528,-0.140013796726856,0.888649089556791
+"conservative","check_framework ~ rank_z + Inst_type","Inst_typescience and engineering universities",0.595789590931897,1.1799632081288,0.504922176240315,0.613613497639152
+"conservative","high_enforcement ~ rank_z + Inst_type","(Intercept)",-1.48367889291923,1.13203154136277,-1.31063388139622,0.189981486643253
+"conservative","high_enforcement ~ rank_z + Inst_type","rank_z",0.269854983299077,0.336483859654504,0.801984926041206,0.422561677915835
+"conservative","high_enforcement ~ rank_z + Inst_type","Inst_typecomprehensive universities",-0.231536402565276,1.22427109277723,-0.189121840686479,0.849997323978369
+"conservative","high_enforcement ~ rank_z + Inst_type","Inst_typeforestry universities",-15.4268418216277,1696.65220889783,-0.00909251863211801,0.992745319726871
+"conservative","high_enforcement ~ rank_z + Inst_type","Inst_typenormal (teacher education) universities",-0.979230809794336,1.54052312598097,-0.635648237458805,0.525005721491068
+"conservative","high_enforcement ~ rank_z + Inst_type","Inst_typescience and engineering universities",-1.09471079648006,1.27440173918579,-0.858999766572402,0.390340644790114
+"expansive","check_framework ~ rank_z + Inst_type","(Intercept)",-1.51633705547158,1.1322420730004,-1.33923397798966,0.180494514265417
+"expansive","check_framework ~ rank_z + Inst_type","rank_z",0.344519130977365,0.252890271830693,1.36232654772903,0.173094853038323
+"expansive","check_framework ~ rank_z + Inst_type","Inst_typecomprehensive universities",0.454078001841566,1.19613786159104,0.379620122748706,0.704227421329668
+"expansive","check_framework ~ rank_z + Inst_type","Inst_typeforestry universities",1.07680185158177,1.82002049086192,0.591642707864142,0.554089868807396
+"expansive","check_framework ~ rank_z + Inst_type","Inst_typenormal (teacher education) universities",-0.192512619673166,1.37495464142528,-0.140013796726856,0.888649089556791
+"expansive","check_framework ~ rank_z + Inst_type","Inst_typescience and engineering universities",0.595789590931897,1.1799632081288,0.504922176240315,0.613613497639152
+"expansive","high_enforcement ~ rank_z + Inst_type","(Intercept)",-1.53236405025137,1.13607304613917,-1.34882528501046,0.177393091127906
+"expansive","high_enforcement ~ rank_z + Inst_type","rank_z",0.379270721891608,0.284406202060875,1.333552922346,0.182350420375162
+"expansive","high_enforcement ~ rank_z + Inst_type","Inst_typecomprehensive universities",0.0186926379399061,1.21503554359455,0.01538443713721,0.987725479324267
+"expansive","high_enforcement ~ rank_z + Inst_type","Inst_typeforestry universities",1.04849299901789,1.82376571751138,0.57490553142353,0.565355188764573
+"expansive","high_enforcement ~ rank_z + Inst_type","Inst_typenormal (teacher education) universities",-0.200190398349691,1.37728864478476,-0.145351084616672,0.884433683245616
+"expansive","high_enforcement ~ rank_z + Inst_type","Inst_typescience and engineering universities",0.0534578074854033,1.19723255029104,0.0446511477426903,0.964385373282257

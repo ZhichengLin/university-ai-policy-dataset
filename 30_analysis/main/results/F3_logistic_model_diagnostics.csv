@@ -1,0 +1,7 @@
+"scenario","model","converged","n","aic"
+"baseline","check_framework ~ rank_z + Inst_type",TRUE,100,123.299122248614
+"baseline","high_enforcement ~ rank_z + Inst_type",TRUE,100,106.278067877329
+"conservative","check_framework ~ rank_z + Inst_type",TRUE,100,123.299122248614
+"conservative","high_enforcement ~ rank_z + Inst_type",TRUE,100,78.8226350800771
+"expansive","check_framework ~ rank_z + Inst_type",TRUE,100,123.299122248614
+"expansive","high_enforcement ~ rank_z + Inst_type",TRUE,100,106.278067877329

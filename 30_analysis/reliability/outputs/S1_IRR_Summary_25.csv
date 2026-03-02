@@ -1,0 +1,4 @@
+Variable,N,Pct_Agreement,Kappa,Kappa_P,AC1,PABAK,Prevalence_Index,Bias_Index,Agreement_Index_abs,Positive_Agreement,Negative_Agreement,Disagreements,A_1s,B_1s
+check_framework,25,100,1,0,1,1,0.68,0,1,1,1,0,4,4
+tool_specified,25,100,1,0,1,1,0.68,0,1,1,1,0,4,4
+linked_to_pass,25,96,0.7788,1e-4,0.9512,0.92,0.8,0.04,0.92,0.8,0.9778,1,2,3

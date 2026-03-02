@@ -1,0 +1,128 @@
+# Policy Text: 99_Adelaide_guidelines-for-use-of-generative-ai-in-the-higher-degree-by-research
+
+## Provenance
+- Source file: `00_source_material/02_international_original/99_Adelaide_guidelines-for-use-of-generative-ai-in-the-higher-degree-by-research.pdf`
+- Source SHA256: `694bafdfee8b8ed9091e3ae1036559fa640d46a90f25649729101bd766f4a7df`
+- Source type: `pdf`
+- Extracted at (UTC): `2026-03-01T12:14:09.289442+00:00`
+- Extraction method: `pypdf2:page-text`
+- Dataset link: `S2`
+- Dataset row id: `87`
+- Institution: `University of Adelaide`
+- Source URL: `https://www.adelaide.edu.au/graduate-research/ua/media/4102/guidelines-for-use-of-generative-ai-in-the-higher-degree-by-research.pdf`
+- Snapshot filename (dataset): `99_Adelaide_guidelines-for-use-of-generative-ai-in-the-higher-degree-by-research.pdf`
+- Policy scope (dataset): ``
+- Release date (dataset): `None`
+
+## Full Policy Text
+
+### Page 1
+
+Last Updated 9/12/24 
+PRV12105 
+CRICOS 00123M Adelaide Graduate Research School 
+ graduate.research@adelaide.edu.au 
+Guidelines for use of generative AI tools in the preparation of 
+Research Outputs by Higher Degree by Research Students 
+1. Preamble 
+Generative AI is a rapidly evolving technology, with new capabilities and applications being introduced 
+regularly. The purpose of this document is to provide guidelines and expectations for the use of 
+generative AI tools in the preparation of research outputs related to the Higher Degree by Research 
+(HDR) progra m, including the thesis. These guidelines do not prescribe specific tools or uses, and are 
+subject to change from time to time. 
+Generative AI tools generate new content, such as text or images based on prompts from the user. While such tools present opportunities generative AI tools do not have the capability to undertake 
+independent original research. Overreliance on such tools may inhibit the development of the skills 
+needed to be an independent researcher. 
+Despite the potential risks and limitations, AI tools present opportunities such as streamlining routine activities, providing input to improve writing quality, and even with research related tasks such as identifying relevant literature. Digital literacy skills, including those required to use AI effec tively, are likely 
+to be increasingly important in the workforce. Therefore, students are encouraged to use and experiment with AI tools in appropriate ways, but remain aware of the risks. 
+For research outputs related to the HDR, the decision to use generative AI tools should be discussed with supervisors prior to use. Ultimate responsibility for research outputs, including research theses, is with the author(s) of the work. As the sole author of the research thesis, the HDR student is responsible 
+for the content of the thesis, including any errors, omissions, bias or plagiarism introduced by their use of 
+a generative AI tool.
+ 
+2. Scope 
+These guidelines apply to all students enrolled in a Higher Degree by Research (HDR) program . They 
+cover all research outputs related to the research degree, including HDR theses, artefacts and exegeses 
+submitted for examination for an HDR program. These guidelines do not inhibit the use of generative AI 
+tools in research methodology, where such use is acknowledged appropriately according to disciplinary 
+norms and in agreement with the supervisor. 
+These guidelines should be read in conjunction with the University’s Academic Integrity policy1 and 
+Responsible Conduct of Research Policy and Procedure2 
+ 
+ 
+1 Academic Integrity Policy https://www.adelaide.edu.au/policies/230 
+2 Responsible Conduct of Research Policy and Procedure https://www.adelaide.edu.au/policies/96/
+
+### Page 2
+
+Last Updated 9/12/24 
+PRV12105 
+CRICOS 00123M Adelaide Graduate Research School 
+ graduate.research@adelaide.edu.au 
+3. Use of generative AI in the w ritten thesis 
+The following uses of generative AI may be appropriate, following consultation with the supervisors: 
+- Editorial purposes, aligned with the guidelines for the editing of research theses by professional 
+editors and the Australian standards for editing practice3. This means that the use of generative 
+AI must be limited to clarity, expression and spelling. Students should consider the use of appropriate prompts to generate a list of suggested improvements, not to re- write the content. 
+- Where a publi shed article forms part of this thesis, the article must comply with University 
+requirements, including these guidelines, as well as the AI policy of the publisher. The published 
+article must be accompanied in the thesis by a statement of AI use, and a link to the publisher’s 
+AI use policy (or equivalent) must also be included. 
+The following uses of generative AI are not permitted : 
+- Generation of text for inclusion in the thesis. Students are expected to write the thesis independently, under the direction of their supervisors. Where small portions of text are 
+generated by AI tools, they must be presented in quotations, and cited appropriately on the page (for example through footnote or in text reference). 
+- Translation of large portions of text written by the student in another language into English. All HDR students are required to demonstrate that they meet English Language requirements at the point of admission into the program, and the thesis must normally be written in English. 
+- Inclusion of content generated or altered by generative AI without appropriate acknowledgement. 
+- Uploading sensitive or confidential information into generative AI tools
+4 - this may breach your 
+ethical or legal obligations. 
+- Uploading unprotected intellectual property – doing so may reduce your ability to protect 
+and/or commercialise your research in the future, even if such use is limited to editorial purposes. 
+Use of generative AI in all research outputs must be consistent with academic and research integrity 
+policy . 
+4. Use of AI generated images 
+Use of generative AI tools to generate images must be acknowledged clearly for each image (for 
+example in the diagram legend, or in a footnote on the page). 
+AI or other image manipulation tools must not be used to alter or misrepresent res earch findings – for 
+example, through altering or enhancing original research images, or through generating images which could be misinterpreted as being original research images. 
+The author (s)S of research outputs maintain responsibility for the accuracy or all images used and for 
+ensuring they have the rights to use them. 
+ 
+3 Editing your thesis https://www.adelaide.edu.au/graduate-research/current -students/your -thesis -
+examination/preparation#editing-your -thesis 
+4 Generative AI IT Security Guidelines https://www.adelaide.edu.au/technology/secure-it/generative-ai -it-security -guidelines
+
+### Page 3
+
+Last Updated 9/12/24 
+PRV12105 
+CRICOS 00123M Adelaide Graduate Research School 
+ graduate.research@adelaide.edu.au 
+5. Acknowledging generative AI use 
+Students must maintain their own records of generative AI use, including programs or applications used, 
+dates and prompts. These records may be requested where concerns about generative AI use are 
+raised by supervisors, other University staff, examiners, or other relevant parties . 
+Students using AI for any purpose within the thesis must include a use of AI statement in the acknowledgement page of the thesi s. Examples of this statement are below: 
+Generative AI was used in this thesis to improve clarity and expression. Logs of use including dates are 
+available upon request. 
+Generative AI was used to create the diagrams provided within this thesis. Prompts and applications 
+used for generation of diagrams are noted in the footnote of each image. 
+Students using AI for any purpose within internal research outputs (for example, in a presentation, or 
+research proposal) must acknowledge this use as appropriate (for example on a presentation slide, or in the footnote or acknowledgement sections of a document. 
+Students using AI within external publications must abide by the requirements of the publisher in 
+acknowledging AI use. Where the publisher does not require acknowledgement, then usage should be 
+acknowledged according to these guidelines. 
+6. Additional Resources 
+Before using generative AI tools during the HDR, students are encouraged to familiarise themselves with 
+the way in which they work, potential benefits and lim itations of the technology. The following resources 
+provide more information on these topics. 
+• University of Adelaide How Do I Guide: Artificial Intelligence 
+This guide provides an overview of how common generative AI tools work, how they may be used in study and research, and how to acknowledge their use. The Library guide also provides information on the limitations and risks of generative AI, and discusses copyright and IP issues. 
+• University of Adelaide Academic Integrity: Working with Artificial Intelligence
+ 
+This resource aims to guide all students at the University of Adelaide to use Artificial Intelligence tools in 
+ways that align with the University’s expectations for academic integrity. While the resource uses examples specific to coursework programs – for example the use of AI tools in preparing an as signment 
+– the content and principles are still very relevant to HDR students. 
+• Integrity in Research Writing course
+ 
+This MyUni course was developed for University of Adelaide researchers to increase awareness of common integrity issues that arise in conjunction with research writing (for example academic publications, and the HDR thesis), and ways to mitigate them. The course includes a module on 
+generative AI use in research writing.

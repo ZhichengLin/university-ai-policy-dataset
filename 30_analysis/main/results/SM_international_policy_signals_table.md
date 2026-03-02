@@ -1,0 +1,14 @@
+# Table
+
+Table. Additional policy signals in international university AI governance (n = 88).
+
+| Policy signal | n (%) | Operational definition (coded 1 when policy explicitly states...) |
+|---|---|---|
+| Required disclosure template OR standardized statement language | 8 (9.1%) | A named template/form for AI-use disclosure is required, or standardized statement language is prescribed (beyond a general expectation to disclose). |
+| Faculty procedures for suspected AI misuse | 5 (5.7%) | Policy provides procedural steps for instructors/staff when undisclosed AI misuse is suspected (e.g., documentation, escalation, review pathway). |
+| Sanctions for nondisclosure | 4 (4.5%) | Policy explicitly treats nondisclosure/misrepresentation as misconduct or specifies penalties/sanctions tied to nondisclosure. |
+| Detector mention at all | 16 (18.2%) | Policy explicitly mentions AI-content detectors/detection software in the context of assessment or academic-integrity processes. |
+| Detector explicitly "not sole evidence" | 5 (5.7%) | Policy explicitly states detector outputs are not dispositive/cannot be used as sole evidence for misconduct findings. |
+| Required detector screening anywhere | 0 (0.0%) | Policy requires routine detector screening of submissions (e.g., mandatory AI-detection check prior to submission, marking, or progression). |
+
+Note. Indicators are coded from publicly accessible institutional policies for the 88 international universities in our sample. Across the six indicators, 63/88 (71.6%) of institutions contain none of these operationalization signals.

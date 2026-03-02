@@ -1,0 +1,130 @@
+id,univ_name_cn,univ_name_en,shanghairank_2025,Inst_type,tool_name,check_level,check_framework(0/1),tool_specified(0/1),linked_to_pass(0/1),retrieval_rd1(2025.5.6-5.29),retrieval_rd1(2025.6.1-6.14),retrieval_rd1(6.18-7.11)
+1,清华大学,Tsinghua University,1,comprehensive universities,,,0,0,0,2025/5/6,2025/6/1,2025/6/18
+2,北京大学,Peking University,2,comprehensive universities,,,0,0,0,2025/5/6,2025/6/1,2025/6/18
+3,浙江大学,Zhejiang University,3,comprehensive universities,VIPS AIGC Detection System,undergraduate,1,1,0,2025/5/6,2025/6/1,2025/6/18
+4,上海交通大学,Shanghai Jiao Tong University,4,comprehensive universities,,,0,0,0,2025/5/6,2025/6/2,2025/6/18
+5,复旦大学,Fudan University,5,comprehensive universities,,,0,0,0,2025/5/7,2025/6/2,2025/6/18
+6,南京大学,Nanjing University,6,comprehensive universities,VIPS AIGC Detection System,undergraduate,1,1,0,2025/5/7,2025/6/2,2025/6/18
+7,中国科学技术大学,University of Science and Technology of China,7,science and engineering universities,,,0,0,0,2025/5/7,2025/6/2,2025/6/19
+8,武汉大学,Wuhan University,8,comprehensive universities,,,0,0,0,2025/5/7,2025/6/2,2025/6/19
+9,华中科技大学,Huazhong University of Science and Technology,9,comprehensive universities,CNKI (China National Knowledge Infrastructure) Detection System,undergraduate,1,1,1,2025/5/8,2025/6/2,2025/6/19
+10,西安交通大学,Xi'an Jiaotong University,10,comprehensive universities,,undergraduate,0,0,0,2025/5/8,2025/6/3,2025/6/19
+11,北京航空航天大学,Beihang University,11,science and engineering universities,,,0,0,0,2025/5/8,2025/6/3,2025/6/19
+12,中山大学,Sun Yat-sen University,12,comprehensive universities,,,0,0,0,2025/5/8,2025/6/3,2025/6/20
+13,北京理工大学,Beijing Institute of Technology,13,comprehensive universities,,,0,0,0,2025/5/9,2025/6/3,2025/6/20
+14,北京协和医学院,Peking Union Medical College,医1,medical universities,,,0,0,0,2025/5/9,2025/6/3,2025/6/20
+15,哈尔滨工业大学,Harbin Institute of Technology,14,science and engineering universities,,,0,0,0,2025/5/9,2025/6/3,2025/6/20
+16,四川大学,Sichuan University,15,comprehensive universities,,undergraduate,1,0,1,2025/5/9,2025/6/4,2025/6/20
+17,东南大学,Southeast University,16,comprehensive universities,VIPS AIGC Detection System,undergraduate,1,1,1,2025/5/10,2025/6/4,2025/6/20
+18,中国人民大学,Renmin University of China,17,comprehensive universities,,,0,0,0,2025/5/10,2025/6/4,2025/6/20
+19,同济大学,Tongji University,18,comprehensive universities,,,0,0,0,2025/5/10,2025/6/4,2025/6/20
+20,北京师范大学,Beijing  Normal University,19,normal (teacher education) universities,,,0,0,0,2025/5/10,2025/6/4,2025/6/20
+21,天津大学,Tianjin University,20,science and engineering universities,,,0,0,0,2025/5/11,2025/6/4,2025/6/20
+22,西北工业大学,Northwestern Polytechnical University,21,science and engineering universities,,,0,0,0,2025/5/11,2025/6/4,2025/6/20
+23,山东大学,Shandong University,22,comprehensive universities,,,0,0,0,2025/5/11,2025/6/5,2025/6/20
+24,南开大学,Nankai University,23,comprehensive universities,,,0,0,0,2025/5/11,2025/6/5,2025/6/20
+25,厦门大学,Xiamen University,24,comprehensive universities,,,0,0,0,2025/5/12,2025/6/5,2025/6/20
+26,中国农业大学,China Agricultural University,25,agricultural universities,,,0,0,0,2025/5/12,2025/6/5,2025/6/20
+27,吉林大学,Jilin University,26,comprehensive universities,,undergraduate,1,0,0,2025/5/12,2025/6/5,2025/6/21
+28,中南大学,Central South University,27,comprehensive universities,,Postgraduate,1,0,0,2025/5/12,2025/6/5,2025/6/21
+29,大连理工大学,Dalian University of Technology,28,science and engineering universities,,,0,0,0,2025/5/13,2025/6/6,2025/6/21
+30,湖南大学,Hunan University,29,comprehensive universities,,,0,0,0,2025/5/13,2025/6/6,2025/6/21
+31,华东师范大学,East China Normal University,30,normal (teacher education) universities,,,0,0,0,2025/5/13,2025/6/6,2025/6/21
+32,华南理工大学,South China University of Technology,31,science and engineering universities,,,0,0,0,2025/5/13,2025/6/6,2025/6/21
+33,南方科技大学,Southern University of Science and Technology,32,comprehensive universities,,,0,0,0,2025/5/14,2025/6/6,2025/6/21
+34,电子科技大学,University of Electronic Science and Technology of China,33,science and engineering universities,,,0,0,0,2025/5/14,2025/6/6,2025/6/22
+35,重庆大学,Chongqing University,34,comprehensive universities,,,0,0,0,2025/5/14,2025/6/6,2025/6/22
+36,北京科技大学,University of Science and Technology Beijing,35,science and engineering universities,,,0,0,0,2025/5/14,2025/6/6,2025/6/22
+37,上海财经大学,Shanghai University of Finance and Economics,财1,finance and economics universities,,,0,0,0,2025/5/14,2025/6/6,2025/6/22
+38,首都医科大学,Capital Medical University,医2,medical universities,,,0,0,0,2025/5/14,2025/6/6,2025/6/22
+39,南京航空航天大学,Nanjing University of Aeronautics and Astronautics,36,science and engineering universities,,undergraduate,1,0,1,2025/5/15,2025/6/6,2025/6/22
+40,东北大学,Northeastern University,37,science and engineering universities,,,0,0,0,2025/5/15,2025/6/6,2025/6/23
+41,南京理工大学,Nanjing University of Science and Technology,38,science and engineering universities,,,0,0,0,2025/5/15,2025/6/6,2025/6/23
+42,兰州大学,Lanzhou University,39,comprehensive universities,,,0,0,0,2025/5/15,2025/6/6,2025/6/23
+43,南方医科大学,Southern Medical University,医3,medical universities,,,0,0,0,2025/5/15,2025/6/6,2025/6/24
+44,西安电子科技大学 ,Xidian University,40,science and engineering universities,,undergraduate,1,0,0,2025/5/15,2025/6/7,2025/6/24
+45,上海科技大学,ShanghaiTech University,41,comprehensive universities,,,0,0,0,2025/5/15,2025/6/7,2025/6/24
+46,北京交通大学,Beijing Jiaotong University,42,science and engineering universities,,undergraduate,1,0,0,2025/5/16,2025/6/7,2025/6/24
+47,哈尔滨工程大学,Harbin Engineering University,43,science and engineering universities,,,0,0,0,2025/5/16,2025/6/7,2025/6/24
+48,华东理工大学,East China University of Science and Technology,44,science and engineering universities,,,0,0,0,2025/5/16,2025/6/7,2025/6/25
+49,东北师范大学,Northeast Normal University,45,normal (teacher education) universities,,,0,0,0,2025/5/16,2025/6/7,2025/6/25
+50,香港中文大学（深圳）,"The Chinese University of Hong Kong, Shenzhen",合作1,comprehensive universities,,,0,0,0,2025/5/16,2025/6/7,2025/6/25
+51,中央财经大学,Central University of Finance and Economics,财2,finance and economics universities,,,0,0,0,2025/5/17,2025/6/7,2025/6/25
+52,苏州大学,Soochow University,46,comprehensive universities,,,0,0,0,2025/5/17,2025/6/7,2025/6/25
+53,华中农业大学,Huazhong Agricultural University,47,agricultural universities,,,0,0,0,2025/5/17,2025/6/7,2025/6/25
+54,武汉理工大学,Wuhan University of Technology,48,science and engineering universities,,,0,0,0,2025/5/17,2025/6/7,2025/6/25
+55,中国石油大学（北京）,"China University of Petroleum, Beijing",49,science and engineering universities,,,0,0,0,2025/5/17,2025/6/7,2025/6/25
+56,郑州大学,Zhengzhou University,50,comprehensive universities,,,0,0,0,2025/5/17,2025/6/7,2025/6/25
+57,江南大学,Jiangnan University,51,comprehensive universities,,,0,0,0,2025/5/17,2025/6/7,2025/6/25
+58,西南交通大学,Southwest Jiaotong University,52,science and engineering universities,VIPS AIGC Detection System,undergraduate,1,1,1,2025/5/18,2025/6/8,2025/6/26
+59,南京医科大学,Nanjing Medical University,医4,medical universities,,,0,0,0,2025/5/18,2025/6/8,2025/6/26
+60,南京农业大学,Nanjing Agricultural University,53,agricultural universities,,,0,0,0,2025/5/18,2025/6/8,2025/6/26
+61,中国地质大学（武汉）,China University of Geosciences,54,science and engineering universities,,undergraduate,1,0,1,2025/5/18,2025/6/8,2025/6/26
+62,对外经贸大学,University of International Business and Economics,财3,finance and economics universities,,,0,0,0,2025/5/19,2025/6/8,2025/6/27
+63,暨南大学,Jinan University,55,comprehensive universities,,,0,0,0,2025/5/19,2025/6/9,2025/6/27
+64,华中师范大学,Central China Normal University,56,normal (teacher education) universities,,,0,0,0,2025/5/19,2025/6/9,2025/6/27
+65,中国海洋大学,Ocean University of China,56,comprehensive universities,,,0,0,0,2025/5/19,2025/6/9,2025/6/27
+66,中国政法大学,China University of Political Science and Law,政1,finance and economics universities,,,0,0,0,2025/5/20,2025/6/9,2025/6/28
+67,南京师范大学,Nanjing Normal University,58,normal (teacher education) universities,,,0,0,0,2025/5/20,2025/6/9,2025/6/28
+68,中国矿业大学,China University of Mining and Technology,59,science and engineering universities,,,0,0,0,2025/5/20,2025/6/9,2025/6/28
+69,天津医科大学,Tianjin Medical University,医5,medical universities,,,0,0,0,2025/5/20,2025/6/9,2025/6/29
+70,中国医科大学,China Medical University (Shenyang),医6,medical universities,,,0,0,0,2025/5/20,2025/6/9,2025/6/29
+71,北京邮电大学,Beijing University of Posts and Telecommunications,60,science and engineering universities,,,0,0,0,2025/5/20,2025/6/9,2025/6/29
+72,上海大学,Shanghai University,61,comprehensive universities,,,0,0,0,2025/5/20,2025/6/9,2025/6/29
+73,北京中医药大学,Beijing University of Chinese Medicine,中医1,medical universities,,,0,0,0,2025/5/21,2025/6/9,2025/6/29
+74,浙江工业大学,Zhejiang University of Technology,62,science and engineering universities,,,0,0,0,2025/5/21,2025/6/9,2025/6/30
+75,中南财经政法大学,Zhongnan University of Economics and Law,财4,finance and economics universities,,,0,0,0,2025/5/21,2025/6/9,2025/6/30
+76,北京化工大学,Beijing University of Chemical Technology,63,science and engineering universities,,,0,0,0,2025/5/21,2025/6/9,2025/6/30
+77,河海大学,Hohai University,64,science and engineering universities,,,0,0,0,2025/5/21,2025/6/9,2025/6/30
+78,陕西师范大学,Shaanxi Normal University,65,normal (teacher education) universities,,,0,0,0,2025/5/21,2025/6/9,2025/7/1
+79,西南财经大学,Southwestern University of Finance and Economics,财5,finance and economics universities,,,0,0,0,2025/5/21,2025/6/9,2025/7/1
+80,西南大学,Southwest University,66,comprehensive universities,,undergraduate,1,0,0,2025/5/21,2025/6/10,2025/7/1
+81,中国石油大学（华东）,China University of Petroleum (East China),67,science and engineering universities,,,0,0,0,2025/5/22,2025/6/10,2025/7/1
+82,深圳大学,Shenzhen University,68,science and engineering universities,,,0,0,0,2025/5/22,2025/6/10,2025/7/1
+83,上海中医药大学,Shanghai University of Traditional Chinese Medicine,中医2,traditional Chinese medicine universities,,,0,0,0,2025/5/22,2025/6/10,2025/7/2
+84,云南大学,Yunnan University,69,comprehensive universities,,undergraduate,0,0,0,2025/5/23,2025/6/10,2025/7/2
+85,西北大学,Northwest University,70,comprehensive universities,,,0,0,0,2025/5/23,2025/6/10,2025/7/2
+86,西北农林科技大学,Northwest A&F University,71,agricultural universities,CNKI (China National Knowledge Infrastructure) Detection System,undergraduate,1,1,1,2025/5/23,2025/6/11,2025/7/2
+87,北京工业大学,Beijing University of Technology,72,science and engineering universities,,undergraduate,1,0,1,2025/5/23,2025/6/11,2025/7/3
+88,南昌大学,Nanchang University,73,comprehensive universities,,,0,0,0,2025/5/23,2025/6/11,2025/7/3
+89,上海纽约大学,NYU Shanghai,合作2,comprehensive universities,,,0,0,0,2025/5/23,2025/6/11,2025/7/3
+90,东华大学,Donghua University,74,science and engineering universities,,,0,0,0,2025/5/23,2025/6/11,2025/7/3
+91,中国地质大学（北京）,"China University of Geosciences, Beijing",75,science and engineering universities,,undergraduate,1,0,0,2025/5/24,2025/6/11,2025/7/3
+92,中国矿业大学（北京）,China University of Mining and Technology-Beijing,76,science and engineering universities,,,0,0,0,2025/5/24,2025/6/11,2025/7/3
+93,广州医科大学,Guangzhou Medical University,医8,medical universities,,,0,0,0,2025/5/24,2025/6/11,2025/7/4
+94,哈尔滨医科大学,Harbin Medical University,医7,medical universities,,,0,0,0,2025/5/24,2025/6/11,2025/7/4
+95,宁波诺丁汉大学,University of Nottingham Ningbo China,合作3,comprehensive universities,,,0,0,0,2025/5/24,2025/6/11,2025/7/4
+96,福州大学,Fuzhou University,77,science and engineering universities,,undergraduate,1,0,1,2025/5/24,2025/6/12,2025/7/4
+97,宁波大学,Ningbo University,78,comprehensive universities,,,0,0,0,2025/5/24,2025/6/12,2025/7/4
+98,合肥工业大学,Hefei University of Technology,79,science and engineering universities,,,0,0,0,2025/5/24,2025/6/12,2025/7/4
+99,华南师范大学,South China Normal University,80,normal (teacher education) universities,,undergraduate,1,0,1,2025/5/25,2025/6/12,2025/7/4
+100,温州医科大学,Wenzhou Medical University,医9,medical universities,,,0,0,0,2025/5/25,2025/6/12,2025/7/5
+101,"中央民族大学
+",Minzu University of China,民1,ethnic/minority university,,,0,0,0,2025/5/25,2025/6/12,2025/7/5
+102,南京邮电大学,Nanjing University of Posts and Telecommunications,81,science and engineering universities,,,0,0,0,2025/5/25,2025/6/12,2025/7/5
+103,东北财经大学,Dongbei University of Finance and Economics,财6,finance and economics universities,,undergraduate,1,0,1,2025/5/25,2025/6/12,2025/7/5
+104,江苏大学,Jiangsu University,82,comprehensive universities,维普 AIGC 检测,undergraduate,1,1,1,2025/5/26,2025/6/12,2025/7/5
+105,北京外国语大学,Beijing Foreign Studies University,语1,language and culture universities,,,0,0,0,2025/5/26,2025/6/12,2025/7/6
+106,华北电力大学,North China Electric Power University,83,science and engineering universities,,研究生,1,0,0,2025/5/26,2025/6/12,2025/7/6
+107,中国传媒大学,Communication University of China,语3,language and culture universities,,,0,0,0,2025/5/26,2025/6/13,2025/7/6
+108,长安大学,Chang'an University,84,science and engineering universities,,,0,0,0,2025/5/26,2025/6/13,2025/7/7
+109,北京林业大学,Beijing Forestry University,85,forestry universities,,,0,0,0,2025/5/26,2025/6/13,2025/7/7
+110,贵州大学,Guizhou University,86,comprehensive universities,,,0,0,0,2025/5/27,2025/6/13,2025/7/7
+111,重庆医科大学,Chongqing Medical University,医11,medical universities,,undergraduate,1,0,0,2025/5/27,2025/6/13,2025/7/7
+112,中国药科大学,China Pharmaceutical University,医10,medical universities,,,0,0,0,2025/5/27,2025/6/13,2025/7/8
+113,福建师范大学,Fujian Normal University,87,normal (teacher education) universities,,,0,0,0,2025/5/27,2025/6/13,2025/7/8
+114,湖南师范大学,Hunan Normal University,88,normal (teacher education) universities,,,0,0,0,2025/5/27,2025/6/13,2025/7/8
+115,广西大学,Guangxi University,89,comprehensive universities,,,0,0,0,2025/5/27,2025/6/13,2025/7/8
+116,南京林业大学,Nanjing Forestry University,90,forestry universities,,undergraduate,1,0,1,2025/5/27,2025/6/13,2025/7/8
+117,扬州大学,Yangzhou University,91,comprehensive universities,,,0,0,0,2025/5/27,2025/6/13,2025/7/8
+118,浙江师范大学,Zhejiang Normal University,92,normal (teacher education) universities,,undergraduate,1,0,1,2025/5/27,2025/6/13,2025/7/8
+119,海南大学,Hainan University,93,comprehensive universities,,undergraduate,1,0,1,2025/5/28,2025/6/13,2025/7/8
+120,南京工业大学,Nanjing Tech University,94,science and engineering universities,维普论文检测系统,undergraduate,1,1,1,2025/5/28,2025/6/14,2025/7/9
+121,南京中医药大学,Nanjing University of Chinese Medicine,中医3,traditional Chinese medicine universities,,undergraduate,1,0,1,2025/5/28,2025/6/14,2025/7/9
+122,南京信息工程大学,Nanjing University of Information Science & Technology,95,science and engineering universities,,undergraduate,1,0,1,2025/5/28,2025/6/14,2025/7/9
+123,广东工业大学,Guangdong University of Technology,96,science and engineering universities,,undergraduate,1,0,1,2025/5/29,2025/6/15,2025/7/9
+124,杭州电子科技大学,Hangzhou Dianzi University,97,science and engineering universities,,,0,0,0,2025/5/29,2025/6/15,2025/7/10
+125,外交学院,China Foreign Affairs University,语4,language and culture universities,,,0,0,0,2025/5/29,2025/6/15,2025/7/10
+126,安徽大学,Anhui University,98,comprehensive universities,,,0,0,0,2025/5/29,2025/6/15,2025/7/11
+127,首都师范大学,Capital Normal University,99,normal (teacher education) universities,,,0,0,0,2025/5/29,2025/6/15,2025/7/11
+128,华南农业大学,South China Agricultural University,100,agricultural universities,,,0,0,0,2025/5/29,2025/6/15,2025/7/11

@@ -1,0 +1,26 @@
+id,univ_name_cn,shanghairank_2025,univ_name_en,Inst_type,tool_specified,check_framework,linked_to_pass
+1,清华大学,1,Tsinghua University,综合,0,0,0
+2,北京大学,2,Peking University,综合,0,0,0
+3,浙江大学,3,Zhejiang University,综合,1,1,1
+4,上海交通大学,4,Shanghai Jiao Tong University,综合,0,0,0
+5,复旦大学,5,Fudan University,综合,0,0,0
+6,南京大学,6,Nanjing University,综合,1,1,0
+8,武汉大学,8,Wuhan University,综合,0,0,0
+9,华中科技大学,9,Huazhong University of Science and Technology,综合,1,1,1
+10,西安交通大学,10,Xi'an Jiaotong University,综合,0,0,0
+7,中国科学技术大学,7,University of Science and Technology of China,理工,0,0,0
+11,北京航空航天大学,11,Beihang University,理工,0,0,0
+15,哈尔滨工业大学,14,Harbin Institute of Technology,理工,0,0,0
+21,天津大学,20,Tianjin University,理工,0,0,0
+22,西北工业大学,21,Northwestern Polytechnical University,理工,0,0,0
+29,大连理工大学,28,Dalian University of Technology,理工,0,0,0
+32,华南理工大学,31,South China University of Technology,理工,0,0,0
+34,电子科技大学,33,University of Electronic Science and Technology of China,理工,0,0,0
+14,北京协和医学院,医1,Peking Union Medical College,医药,0,0,0
+20,北京师范大学,19,Beijing  Normal University,师范,0,0,0
+31,华东师范大学,30,East China Normal University,师范,0,0,0
+37,上海财经大学,财1,Shanghai University of Finance and Economics,财经,0,0,0
+86,西北农林科技大学,71,Northwest A&F University,农业,1,1,1
+105,北京外国语大学,语1,Beijing Foreign Studies University,语言,0,0,0
+73,北京中医药大学,中医1,Beijing University of Chinese Medicine,中医药,0,0,0
+101,中央民族大学,民1,Minzu University of China,民族,0,0,0

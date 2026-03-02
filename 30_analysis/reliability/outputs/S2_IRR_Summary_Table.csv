@@ -1,0 +1,5 @@
+Dimension,N,Pct_Agreement,Kappa,Kappa_P,AC1,PABAK,Pos_Agree,Neg_Agree,Prevalence_Index,Bias_Index,Disagreements,Note
+D1,88,96.591,0.383,0,0.964,0.932,0.982,0.4,0.943,0.011,3,
+D2,88,98.864,0.662,0,0.988,0.977,0.994,0.667,0.966,0.011,1,
+D3,88,100,NA,NA,1,1,1,NA,1,0,0,κ not estimable (constant ratings / no variance)
+D4,88,98.864,0,1,0.989,0.977,0.994,0,0.989,0.011,1,

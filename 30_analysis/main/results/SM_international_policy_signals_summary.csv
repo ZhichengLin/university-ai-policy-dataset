@@ -1,0 +1,7 @@
+"indicator","indicator_label","n_positive","pct_positive","display","definition"
+"required_disclosure_template","Required disclosure template OR standardized statement language",8,9.1,"8 (9.1%)","Code 1 when policy explicitly requires either (a) a disclosure template/form or (b) standardized statement language."
+"faculty_procedure_suspected_ai_misuse","Faculty procedures for suspected AI misuse",5,5.7,"5 (5.7%)","Code 1 only when policy explicitly states what faculty/instructors should do when AI misuse is suspected (e.g., conversation, evidence-gathering, referral, investigation/viva)."
+"sanctions_for_nondisclosure","Sanctions for nondisclosure (incl. attribution failure)",4,4.5,"4 (4.5%)","Code 1 when nondisclosure/attribution-failure language and misconduct/penalty language both appear in the policy text (same clause or elsewhere in the same document)."
+"detector_mention_any","Detector mention at all",16,18.2,"16 (18.2%)","Code 1 when policy explicitly mentions AI-content detection tools or AI-detection functionality (including Turnitin only when AI-detection function is referenced)."
+"detector_not_sole_evidence","Detector explicitly not sole evidence",5,5.7,"5 (5.7%)",""
+"required_detector_screening","Required detector screening anywhere",0,0,"0 (0.0%)",""

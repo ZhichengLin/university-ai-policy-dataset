@@ -1,0 +1,37 @@
+# Publish scope allowlist (top-level):
+# keep only these paths in Git visibility.
+/*
+!/.gitignore
+!/README.md
+!/00_source_material/
+!/00_source_material/**
+!/10_structured_tables/
+!/10_structured_tables/**
+!/20_coding/
+!/20_coding/**
+!/30_analysis/
+!/30_analysis/**
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# R session/user-local files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+Rplots.pdf
+
+# Local secrets / env files
+.env
+.env.*
+.Renviron
+
+# Office temp lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Out-of-scope internal validation artifacts
+90_internal_qc_validation/

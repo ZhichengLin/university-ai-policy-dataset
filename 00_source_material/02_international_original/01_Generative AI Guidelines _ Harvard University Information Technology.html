@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="utf-8"/>
+
+
+<meta content="These guidelines cover information security and data privacy, compliance, copyright, and academic integrity regarding the use of Generative AI" name="description"/>
+<link href="https://www.huit.harvard.edu/ai/guidelines" rel="canonical"/>
+<meta content="News" property="og:type"/>
+<meta content="https://www.huit.harvard.edu/ai/guidelines" property="og:url"/>
+<meta content="Generative AI Guidelines | Harvard University Information Technology" property="og:title"/>
+<meta content="These guidelines cover information security and data privacy, compliance, copyright, and academic integrity regarding the use of Generative AI" property="og:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="These guidelines cover information security and data privacy, compliance, copyright, and academic integrity regarding the use of Generative AI" name="twitter:description"/>
+<meta content="Drupal 10 (https://www.drupal.org)" name="Generator"/>
+<meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1, interactive-widget=overlays-content" name="viewport"/>
+<link href="//fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" id="font-merriweather-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" id="font-roboto-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/icon?family=Material+Icons" id="font-material-icons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/icon?family=Material+Icons+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" id="font-material-icons-outlined-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/postgrotesk.css" id="font-postgrotesk-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/brandontext.css" id="font-brandontext-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/arial.css" id="font-arial-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/treehouse.css" id="font-treehouse-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/sanomat.css" id="font-sanomat-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//use.typekit.net/oes1zsc.css" id="font-brandon-grotesque-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/profiles/hwp_dstan/themes/hwp_hyard/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+<title lang="en">Generative AI Guidelines | Harvard University Information Technology</title>
+<link href="/sites/g/files/omnuum10811/files/css/css_Cd-SY1yQGm8YxVMGqhNTNN0NtQudCnox5hO-Ea6mU7E.css?delta=0&amp;language=en&amp;theme=hwp_hyard&amp;include=eJxdzmEOwyAIBeALuZqeqEEllZSKAc3m7ee2LGv2ky8PHvhoTOXwSXsFXvAzunyvWx6gyWOiJkqwruOiO0sAvoAxxeMWQaUbsjuh4VzijaIU8wEmUsF_l_6qw-QqKOwKNdv3k58svdQemCzPoA1reL4PPgHW90lF" media="all" rel="stylesheet"/>
+<link href="//fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet"/>
+<link href="//fonts.googleapis.com/icon?family=Material+Icons+Outlined" media="all" rel="stylesheet"/>
+<link href="/sites/g/files/omnuum10811/files/css/css_-KhNwYGAF3kT8ZFYPjJ-Igzrua8G4X9VmMhVUehGetc.css?delta=3&amp;language=en&amp;theme=hwp_hyard&amp;include=eJxdzmEOwyAIBeALuZqeqEEllZSKAc3m7ee2LGv2ky8PHvhoTOXwSXsFXvAzunyvWx6gyWOiJkqwruOiO0sAvoAxxeMWQaUbsjuh4VzijaIU8wEmUsF_l_6qw-QqKOwKNdv3k58svdQemCzPoA1reL4PPgHW90lF" media="all" rel="stylesheet"/>
+<link href="/sites/g/files/omnuum10811/files/css/css_1OjhPg8UZw2mu4FtOmY1auZhhaU1bxEMfJX3Sl1o0N0.css?delta=4&amp;language=en&amp;theme=hwp_hyard&amp;include=eJxdzmEOwyAIBeALuZqeqEEllZSKAc3m7ee2LGv2ky8PHvhoTOXwSXsFXvAzunyvWx6gyWOiJkqwruOiO0sAvoAxxeMWQaUbsjuh4VzijaIU8wEmUsF_l_6qw-QqKOwKNdv3k58svdQemCzPoA1reL4PPgHW90lF" media="all" rel="stylesheet"/>
+</head>
+<body class="tex2jax_ignore hwp-font-group-brandon-grotesque hwp-icons-filled hwp-style-friendly">
+<a class="hwp-skip-to-content visually-hidden" href="#main-content">
+<div class="hwp-relative hwp-button hwp-button--large hwp-bg-button-light-primary">
+<span class="hwp-button__text">Skip to main content</span>
+<span aria-hidden="true" class="material-icon material-icon--arrow-circle-down tex2jax_ignore hwp-font-group-brandon-grotesque hwp-icons-filled hwp-style-friendly">arrow_circle_down</span>
+</div>
+</a>
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5F59JQJS" style="display:none;visibility:hidden;" width="0"></iframe>
+</noscript><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-52MDQDLC" style="display:none;visibility:hidden;" width="0"></iframe>
+</noscript>
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+<div class="layout-container">
+<header role="banner">
+<div>
+<div id="block-hwp-announcement-banners">
+</div>
+<div id="block-hwp-globalheader">
+<div class="header-global header-global--compact hwp-bg-dark-core">
+<div class="hwp-container hwp-container-px">
+<div class="header-site__utils">
+<div class="header-site__utility-menu">
+<nav aria-label="utility">
+<ul class="hwp-menu hwp-menu--utility">
+<li class="hwp-menu__item">
+<a class="hwp-menu__link" data-drupal-link-system-path="node/826" href="/news" lang="en">News</a>
+</li>
+<li class="hwp-menu__item">
+<a class="hwp-menu__link" data-drupal-link-system-path="node/841" href="/events" lang="en">Events</a>
+</li>
+<li class="hwp-menu__item">
+<a class="hwp-menu__link" href="https://status.huit.harvard.edu/" lang="en">Service status</a>
+</li>
+</ul>
+</nav>
+</div>
+<search class="header-site__search hwp-mb-0" role="search">
+<form accept-charset="UTF-8" action="/ai/guidelines" class="hwp-search-form-header" data-drupal-selector="hwp-search-form-header" id="hwp-search-form-header" method="post">
+<div class="hwp-form-type-search hwp-form-item js-form-item form-item form-type-search js-form-type-search form-item-search js-form-item-search form-no-label">
+<label class="visually-hidden" for="edit-search">Search</label>
+<input class="form-search" data-drupal-selector="edit-search" id="edit-search" maxlength="128" name="search" size="60" type="search" value=""/>
+</div>
+<button class="hwp-button hwp-button--small button js-form-submit form-submit" data-drupal-selector="edit-submit" data-twig-suggestion="header_site_search_submit" id="edit-submit" name="op" type="submit" value="Search">
+<span class="hwp-button__text">Search</span>
+<span aria-hidden="true" class="material-icon">search</span>
+</button>
+<input autocomplete="off" data-drupal-selector="form-vojtd1-vmsqys-o0kmg6kfci2eguokavmop-dvk0r0m" name="form_build_id" type="hidden" value="form-vOjTd1_VMSQYs_O0KMG6kFCi2egUOKaVmop_DvK0R0M"/>
+<input data-drupal-selector="edit-hwp-search-form-header" name="form_id" type="hidden" value="hwp_search_form_header"/>
+</form>
+</search>
+</div>
+</div>
+</div>
+</div>
+<div id="block-hwp-siteheader">
+<div class="header-site header-site--compact header-site--light-core">
+<div class="hwp-bg-light-core">
+<div class="header-site__main hwp-container">
+<div class="header-site__brand">
+<a href="/">
+<div class="header-site__logo-large hwp-hidden md:hwp-block"><img alt="Harvard University Information Technology" src="/sites/g/files/omnuum10811/files/hwp_hyard/logo/HUITLogo_pad_0.svg" style="height: 77px;"/>
+</div>
+<div class="header-site__logo-small md:hwp-hidden"><img alt="Harvard University Information Technology" src="/sites/g/files/omnuum10811/files/hwp_hyard/logo/HUITLogo_pad_0.svg" style="height: 77px;"/>
+</div>
+</a>
+</div>
+<button aria-expanded="false" class="header-site__menu-trigger js-header-site__menu-trigger">
+<span aria-hidden="true" class="material-icon material-icon--menu">menu</span>
+<span aria-hidden="true" class="material-icon material-icon--close">close</span>
+<span class="header-site__menu-trigger-label">Menu</span>
+</button>
+<div class="header-site__utils hwp-shrink-0">
+<search class="header-site__search" role="search">
+<form accept-charset="UTF-8" action="/ai/guidelines" class="hwp-search-form-header" data-drupal-selector="hwp-search-form-header" id="hwp-search-form-header" method="post">
+<div class="hwp-form-type-search hwp-form-item js-form-item form-item form-type-search js-form-type-search form-item-search js-form-item-search form-no-label">
+<label class="visually-hidden" for="edit-search">Search</label>
+<input class="form-search" data-drupal-selector="edit-search" id="edit-search" maxlength="128" name="search" size="60" type="search" value=""/>
+</div>
+<button class="hwp-button hwp-button--small button js-form-submit form-submit" data-drupal-selector="edit-submit" data-twig-suggestion="header_site_search_submit" id="edit-submit" name="op" type="submit" value="Search">
+<span class="hwp-button__text">Search</span>
+<span aria-hidden="true" class="material-icon">search</span>
+</button>
+<input autocomplete="off" data-drupal-selector="form-miaimznvxxwtlta7iaviojq1rwpyjwjedugwzylv-3q" name="form_build_id" type="hidden" value="form-MIaIMzNVxXWtlTa7iAViojQ1RWpYJWjeDUgwzYLv_3Q"/>
+<input data-drupal-selector="edit-hwp-search-form-header" name="form_id" type="hidden" value="hwp_search_form_header"/>
+</form>
+</search>
+<div class="header-site__utility-menu hwp-mt-16">
+<nav aria-label="utility">
+<ul class="hwp-menu hwp-menu--utility">
+<li class="hwp-menu__item">
+<a class="hwp-menu__link" data-drupal-link-system-path="node/826" href="/news" lang="en">News</a>
+</li>
+<li class="hwp-menu__item">
+<a class="hwp-menu__link" data-drupal-link-system-path="node/841" href="/events" lang="en">Events</a>
+</li>
+<li class="hwp-menu__item">
+<a class="hwp-menu__link" href="https://status.huit.harvard.edu/" lang="en">Service status</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="hwp-bg-light-core lg:hwp-bg-light-core">
+<div class="header-site__navigation">
+<div class="header-site__brand">
+<a href="/">
+<div class="header-site__logo-large hwp-hidden md:hwp-block"><img alt="Harvard University Information Technology" src="/sites/g/files/omnuum10811/files/hwp_hyard/logo/HUITLogo_pad_0.svg" style="height: 77px;"/>
+</div>
+<div class="header-site__logo-small md:hwp-hidden"><img alt="Harvard University Information Technology" src="/sites/g/files/omnuum10811/files/hwp_hyard/logo/HUITLogo_pad_0.svg" style="height: 77px;"/>
+</div>
+</a>
+</div>
+<nav aria-label="Main" class="hwp-main-menu">
+<div class="hwp-main-menu__container">
+<ul class="hwp-main-menu__list">
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu">
+<div class="hwp-expanded-item--wrapper" data-level="0">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/1271" href="/browse-resources" lang="en">Browse resources</a>
+<button aria-expanded="false" class="js-hwp-main-menu__submenu-trigger hwp-main-menu__submenu-trigger-icon">
+<span class="hwp-visually-hidden">Browse resources</span>
+<span aria-hidden="true" class="material-icon !hwp-block">expand_more</span>
+</button>
+</div>
+<ul class="hwp-main-menu__list-submenu" tabindex="-1">
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/1121" href="/tools-and-services" id="menu_link_content:aed3a888-9daf-4046-925d-8770f204b938">Tools &amp; services</a>
+</li>
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/1126" href="/policies-and-guidelines" id="menu_link_content:436ba7ad-bb70-459d-9510-a07f69dc8928">Policies &amp; guidelines</a>
+</li>
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/1131" href="/programs-initiatives" id="menu_link_content:a38315e2-7534-4459-bffb-ffc487c7a676">Programs &amp; initiatives</a>
+</li>
+<li class="hwp-main-menu__item">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/771" href="/it-perks-and-discounts" id="menu_link_content:cfeed1b4-a189-4c23-840d-9b0cc1ea6460">IT perks &amp; discounts</a>
+</li>
+<li class="hwp-main-menu__item">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/666" href="/welcome" id="menu_link_content:dd88b9b2-ad0c-43c3-a162-951979bae170">Welcome to Harvard</a>
+</li>
+</ul>
+</li>
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu">
+<div class="hwp-expanded-item--wrapper" data-level="0">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/451" href="/about" lang="en">About</a>
+<button aria-expanded="false" class="js-hwp-main-menu__submenu-trigger hwp-main-menu__submenu-trigger-icon">
+<span class="hwp-visually-hidden">About</span>
+<span aria-hidden="true" class="material-icon !hwp-block">expand_more</span>
+</button>
+</div>
+<ul class="hwp-main-menu__list-submenu" tabindex="-1">
+<li class="hwp-main-menu__item">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/1266" href="/mission-and-values" id="menu_link_content:d0eedc16-e4f6-4ee0-a60f-884a61a2aed1">Mission &amp; values</a>
+</li>
+<li class="hwp-main-menu__item">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/851" href="/annual-report" id="menu_link_content:a3a95bd7-9560-4316-ae4d-63ba2e5cb488">Annual Report</a>
+</li>
+<li class="hwp-main-menu__item">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/846" href="/our-team" id="menu_link_content:07fbe3a6-272f-47e2-bd1d-abe918085950">Our team</a>
+</li>
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/446" href="/leadership" id="menu_link_content:a44a2750-8dfc-409f-98a4-ceffb24439f8">Senior Leadership Team</a>
+</li>
+<li class="hwp-main-menu__item">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/651" data-show-in-main-navigation="1" data-show-in-section-navigation="1" href="/it-community" id="menu_link_content:4a4f666c-b7c1-4029-85b7-b1831e788075">IT Community</a>
+</li>
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/941" href="/cio-council" id="menu_link_content:b42fcc8d-3896-42ed-bed1-edd820f58c55">CIO Council</a>
+</li>
+</ul>
+</li>
+<li class="hwp-main-menu__item hwp-main-menu__item--has-submenu hwp-hidden">
+<div class="hwp-expanded-item--wrapper" data-level="0">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/281" href="/get-help" lang="en">Get help</a>
+<button aria-expanded="false" class="js-hwp-main-menu__submenu-trigger hwp-main-menu__submenu-trigger-icon">
+<span class="hwp-visually-hidden">Get help</span>
+<span aria-hidden="true" class="material-icon !hwp-block">expand_more</span>
+</button>
+</div>
+<ul class="hwp-main-menu__list-submenu" tabindex="-1">
+<li class="hwp-main-menu__item">
+<a class="hwp-main-menu__link" data-drupal-link-system-path="node/481" href="/schools" id="menu_link_content:54b8fc50-e5a0-4998-9769-76b5f57cf2cf">Find your School's IT support</a>
+</li>
+</ul>
+</li>
+</ul>
+<a class="hwp-main-menu__link-featured hwp-button" data-drupal-link-system-path="node/281" href="/get-help" lang="en">Get help</a>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id="block-hwp-breadcrumbs">
+<nav aria-labelledby="system-breadcrumb" class="hwp-breadcrumbs hwp-bg-light-core">
+<div class="hwp-container hwp-container-px">
+<p hidden="" id="system-breadcrumb">Breadcrumbs</p>
+<ol>
+<li>
+<a href="/">Home</a>
+<span aria-hidden="true" class="material-icon material-icon--chevron-right">chevron_right</span>
+</li>
+<li>
+<a href="/browse-resources">Browse resources</a>
+<span aria-hidden="true" class="material-icon material-icon--chevron-right">chevron_right</span>
+</li>
+<li>
+<a href="/programs-initiatives">Programs &amp; initiatives</a>
+<span aria-hidden="true" class="material-icon material-icon--chevron-right">chevron_right</span>
+</li>
+<li>
+<a href="/ai">Generative Artificial Intelligence (AI)</a>
+<span aria-hidden="true" class="material-icon material-icon--chevron-right">chevron_right</span>
+</li>
+<li>
+<span>Generative AI Guidelines</span>
+</li>
+</ol>
+</div>
+</nav>
+</div>
+
+</div>
+</header>
+<main aria-label="Generative AI Guidelines" aria-labelledby="page-title" id="main-content" lang="en" role="main" tabindex="-1">
+<div class="layout-content">
+<div>
+<div class="hidden" data-drupal-messages-fallback=""></div>
+<article class="node node--type-hwp-page node--view-mode-full" lang="en">
+<div class="hwp-page-title hwp-bg-dark-base hwp-sr-only">
+<div class="hwp-container hwp-container-px hwp-py-32">
+<h1 class="text-large" id="page-title">
+<span>Generative AI Guidelines</span>
+</h1>
+</div>
+</div>
+<div class="hwp-content-top">
+<div class="hwp-hero hwp-hero--split-vertical hwp-hero--small hwp-hero--static" data-component-name="hwp-hero">
+<div class="hwp-hero__slides js-hwp-hero-slider-trigger">
+<div class="hwp-hero__slide">
+<div class="hwp-hero__slides-wrapper">
+<div class="hwp-hero__content hwp-bg-dark-alternative hwp-hero__content--left">
+<h1 class="hwp-hero__title hwp-order-2 h1" id="">
+    Guidelines for the use of Generative AI tools at Harvard
+  </h1>
+<div class="hwp-hero__eyebrow-title hwp-order-1 hwp-hero__eyebrow-line">
+      Policies &amp; guidelines
+    </div>
+<div class="hwp-hero__buttons hwp-order-4">
+</div>
+</div>
+<div class="hwp-hero__media hwp-bg-dark-alternative">
+<div class="hwp-media hwp-media--21-9-small-split-vertical-hero">
+<div class="field field--name-field-media-image field--type-image field--label-hidden"> <picture>
+<source height="615" media="all and (min-width: 1920px)" srcset="/sites/g/files/omnuum10811/files/styles/hwp_21_9__1440x615/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=gmnDalqg 1x, /sites/g/files/omnuum10811/files/styles/hwp_21_9__2880x1230/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=IXIpaS5b 2x" type="image/jpeg" width="1440"/>
+<source height="440" media="all and (min-width: 1440px)" srcset="/sites/g/files/omnuum10811/files/styles/hwp_21_9__1024x440/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=aYPr0Zuw 1x, /sites/g/files/omnuum10811/files/styles/hwp_21_9__2048x880/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=trEi7-JL 2x" type="image/jpeg" width="1024"/>
+<source height="330" media="all and (min-width: 768px)" srcset="/sites/g/files/omnuum10811/files/styles/hwp_21_9__768x330/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=j4ggJtUm 1x, /sites/g/files/omnuum10811/files/styles/hwp_21_9__1536x660/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=oyQt3wlJ 2x" type="image/jpeg" width="768"/>
+<source height="205" media="all and (min-width: 480px)" srcset="/sites/g/files/omnuum10811/files/styles/hwp_21_9__480x205/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=k8fu3djk 1x, /sites/g/files/omnuum10811/files/styles/hwp_21_9__768x330/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=j4ggJtUm 2x" type="image/jpeg" width="480"/>
+<source height="205" media="all and (min-width: 0)" srcset="/sites/g/files/omnuum10811/files/styles/hwp_21_9__480x205/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=k8fu3djk 1x, /sites/g/files/omnuum10811/files/styles/hwp_21_9__960x410/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=takgHEc1 2x" type="image/jpeg" width="480"/>
+<img alt="Woman works on her laptop in a library." height="825" loading="eager" src="/sites/g/files/omnuum10811/files/styles/hwp_21_9__1920x825/public/2025-09/Hero%20image%20-%20policies.jpg?h=897e25e6&amp;itok=q0BRfO_L" width="1920"/>
+</picture>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hwp-container hwp-w-full hwp-py-32 lg:hwp-py-64">
+<div class="hwp-flex hwp-flex-col hwp-flex-1 hwp-overflow-hidden">
+<div class="hwp-additional-content">
+<div class="hwp-text-block hwp-bg-light-core hwp-container-px hwp-container-py" id="introduction">
+<div class="hwp-text-block field field--name-field-hwp-body field--type-text-long field--label-hidden"><h2 id="boxes-box-1694614715">Overview</h2><p>Generative AI is a type of artificial intelligence that can learn from and mimic large amounts of data to create content such as text, images, music, videos, code, and more, based on inputs or prompts. <span>The University supports responsible experimentation with </span><a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="b825b355-a75f-45ba-9747-e3c9a205264e" href="/ai/tools" title="Generative AI Tool Comparison">generative AI tools</a><span>, but there are important considerations to keep in mind when using these tools, including information security and data privacy, compliance, copyright, and academic integrity. These guidelines are updated periodically. </span></p><p> </p><h2>Protect confidential data</h2><p id="boxes-box-1694711786"><span>You should not enter data </span><a href="https://privsec.harvard.edu/classify-risk"><span>classified as confidential</span></a><span> (Level 2 and above, including non-public research data, finance, HR, student records, medical information, etc.) into publicly-available generative AI tools, in accordance with the University’s </span><a href="https://policy.security.harvard.edu/"><span>Information Security Policy</span></a><span>. Information shared with generative AI tools using default settings is not private and could expose proprietary or sensitive information to unauthorized parties.</span></p><p>Level 2 and above confidential data must only be entered into generative AI tools that have been assessed and approved for such use by Harvard’s Information Security and Data Privacy office. See below for more information about approved tools.</p><p> </p><h2>Review content before publishing or sharing</h2><p id="boxes-box-1694712003"><span>AI-generated content can be inaccurate, misleading, or entirely fabricated (sometimes called “hallucinations”) or may contain copyrighted material. You are responsible for any content that you publish or share that includes AI-generated material.</span></p><p> </p><h2>Adhere to local academic and administrative policies</h2><p id="boxes-box-1694712188"><span>Review your School or Unit’s local policies around the use of generative AI. Many Schools have developed or updated policies around the use of generative AI in the classroom. </span><a href="https://www.harvard.edu/ai/learning-resources/">You can find links to local resources on the University’s generative AI website</a><span>.</span></p><p><span>Faculty should be clear with students they’re teaching and advising about their policies on permitted uses, if any, of generative AI in classes and on academic work. Students are also encouraged to ask their instructors for clarification about these policies as needed.</span></p><p> </p><h2>Be alert for phishing</h2><p id="boxes-box-1694712383"><span>Generative AI has made it easier for malicious actors to create sophisticated phishing emails and “deepfakes” (i.e., video or audio intended to convincingly mimic a person’s voice or physical appearance without their consent) at a far greater scale. Continue to </span><a href="https://security.harvard.edu/click-wisely"><span>follow security best practices</span></a><span> and report suspicious messages to </span><a href="mailto:phishing@harvard.edu"><span>phishing@harvard.edu</span></a><span>.</span></p><p> </p><h2>Use approved tools for Harvard work</h2><p id="boxes-box-1694712567">HUIT and School IT providers have procured a range of generative AI tools with important contractual protections for use in Harvard work. These include security and privacy protections that ensure the tools are appropriate for use with certain types of confidential data, and assurances that the data entered will not be used to train vendor models. </p><ul><li><a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="b825b355-a75f-45ba-9747-e3c9a205264e" href="/ai/tools" title="Generative AI Tool Comparison">A list of available tools provided by HUIT can be found here</a>. More tools may be available from <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="9d408df1-e77e-4f70-b150-7ee6a820675a" href="/schools" title="Find your School's IT support">your School IT provider</a>.</li><li>AI meeting assistants should not be used in Harvard meetings, with the exception of approved tools with contractual protections. Consult the <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="9b1964a2-b163-47db-88b6-3ce5690dc29d" href="/ai-assistant-guidelines" title="AI Assistant Guidelines">AI Assistant Guidelines</a> for more information and how to manage unwanted AI assistants in meetings.</li><li>If you are considering procuring a generative AI tool not currently offered or have questions, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="bc07a81d-27bf-4c4e-a938-79f40a2bc874" href="/get-help" title="Get Help">please contact HUIT</a>. All vendor generative AI tools must be <a href="https://harvard.service-now.com/ithelp?id=sc_cat_item&amp;sys_id=dd01c2651b1e38505b1d3333cc4bcb2d">assessed for risk by Harvard's Information Security and Data Privacy office</a> prior to use in Harvard work.</li></ul></div>
+</div>
+<div class="hwp-text-block hwp-bg-light-alternative hwp-container-px hwp-container-py">
+<h2 class="hwp-text-block__heading h2">
+      Additional guidelines
+    </h2>
+<div class="hwp-text-block field field--name-field-hwp-body field--type-text-long field--label-hidden"><ul><li><a href="https://www.huit.harvard.edu/ai-assistant-guidelines"><strong>AI Assistant Guidelines</strong></a>: Guidance on the use of <span>automated meeting assistants (aka “AI note takers” or “bots”) in online meetings.</span></li><li><a href="https://www.huit.harvard.edu/eu-ai-act"><span><strong>EU AI Act Prohibited Use Cases</strong></span></a><span>: Regulation on the use of AI technologies that may be developed or used in the European Union, or whose output may be used in the European Union. </span></li></ul></div>
+</div>
+</div>
+<div class="hwp-news-footer hwp-py-24 hwp-pt-0 hwp-container hwp-container-px">
+<div class="field field--name-field-hwp-file-upload field--type-entity-reference field--label-hidden">
+<div></div>
+</div>
+<div class="page-tags">
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+<div>
+<div id="block-hwp-global-widget-hwp-page">
+</div>
+</div>
+</main>
+<footer role="contentinfo">
+<div>
+<div id="block-hwp-footer-content">
+<div class="footer-site footer-site--columns hwp-bg-dark-core hwp-text-16 hwp-leading-150">
+<div class="hwp-container hwp-container-px hwp-pt-24 hwp-pb-32 lg:hwp-pt-40">
+<div class="hwp-mb-24 lg:hwp-mb-32 hwp-footer__logo-container">
+<a class="footer-site__logo hwp-inline-flex" href="/">
+<img alt="Harvard Information Technology" class="image" height="55" src="/sites/g/files/omnuum10811/files/hwp_hyard/logo/HUIT%20Horizontal%20RGB%20white%20text.png" style="height: 55px;"/>
+</a>
+</div>
+<div class="lg:hwp-gap-40 hwp-footer__left-aligned lg:hwp-flex">
+<div class="lg:hwp-w-1/3 xl:hwp-w-1/4">
+<div class="hwp-flex hwp-flex-col hwp-gap-24">
+<div></div>
+<div class="hwp-gap-24 hwp-grid">
+<div class="hwp-flex hwp-gap-20 hwp-items-center">
+<span aria-hidden="true" class="material-icon material-icon--footer-contact">smartphone</span>
+<a href="tel:617-495-7777">617-495-7777</a>
+</div>
+<div class="hwp-flex hwp-gap-20 hwp-items-center">
+<span aria-hidden="true" class="material-icon material-icon--footer-contact">email</span>
+<a href="mailto:ithelp@harvard.edu">ithelp@harvard.edu</a>
+</div>
+</div>
+</div>
+</div>
+<div class="hwp-mt-32 lg:hwp-w-2/3 xl:hwp-w-3/4 lg:hwp-mt-0 lg:hwp-flex lg:hwp-flex-col">
+<nav aria-label="footer">
+<ul class="hwp-menu hwp-menu--footer">
+<li class="hwp-menu__item hwp-menu__item--with-sub">
+<a class="hwp-menu__link hwp-menu__link--with-sub" data-drupal-link-system-path="node/1271" href="/browse-resources" lang="en">Browse resources</a>
+<ul class="hwp-menu hwp-menu--sub hwp-menu--sub-1">
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="/tools-and-services">
+        Tools &amp; services
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="/policies-and-guidelines">
+        Policies &amp; guidelines
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="/programs-initiatives">
+        Programs &amp; initiatives
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="/welcome">
+        Welcome to Harvard
+      </a>
+</li>
+</ul>
+</li>
+<li class="hwp-menu__item hwp-menu__item--with-sub">
+<a class="hwp-menu__link hwp-menu__link--with-sub" data-drupal-link-system-path="node/451" href="/about" lang="en">About</a>
+<ul class="hwp-menu hwp-menu--sub hwp-menu--sub-1">
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="/about">
+        About HUIT
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="/it-community">
+        IT Community
+      </a>
+</li>
+</ul>
+</li>
+<li class="hwp-menu__item hwp-menu__item--with-sub">
+<a class="hwp-menu__link hwp-menu__link--with-sub" data-drupal-link-system-path="node/281" href="/get-help" lang="en">Get help</a>
+<ul class="hwp-menu hwp-menu--sub hwp-menu--sub-1">
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="https://harvard.service-now.com/ithelp?id=kb_home">
+        Browse help articles
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="https://privsec.harvard.edu/get-help">
+        Report a security incident
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="https://harvard.service-now.com/ithelp?id=contact">
+        Report a service disruption
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="https://status.huit.harvard.edu/">
+        View service status
+      </a>
+</li>
+</ul>
+</li>
+<li class="hwp-menu__item hwp-menu__item--with-sub">
+<span class="hwp-menu__link hwp-menu__link--with-sub" lang="en">Other resources</span>
+<ul class="hwp-menu hwp-menu--sub hwp-menu--sub-1">
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="https://accessibility.huit.harvard.edu/">
+        Digital Accessibility
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="https://privsec.harvard.edu/">
+        Information Security &amp; Data Privacy
+      </a>
+</li>
+<li class="hwp-menu__item hwp-menu__item--sub hwp-menu__item--sub-1">
+<a class="hwp-menu__link hwp-menu__link--sub hwp-menu__link--sub-1" href="https://intranet.huit.harvard.edu/">
+        HUIT Employee Intranet
+      </a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<div class="lg:hwp-text-right lg:hwp-mt-auto">
+<a class="hwp-py-8 hwp-mt-16 hwp-inline-flex" href="/login">Admin login</a>
+</div>
+</div>
+</div>
+</div>
+<div class="hwp-global-footer hwp-bg-dark-core hwp-py-12 md:hwp-pb-20">
+<div class="hwp-container hwp-container-px hwp-text-16 hwp-text-white xl:hwp-flex xl:hwp-gap-x-24 hwp-flex-wrap xl:hwp-items-center xl:hwp-justify-between">
+<div class="hwp-global-footer__logo">
+<a class="hwp-inline-flex hwp-py-12" href="https://www.harvard.edu">
+<img alt="Harvard University" class="image" height="55" src="/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/images/svg/footer-logo.svg"/>
+</a>
+</div>
+<div class="hwp-global-footer__copyright hwp-py-20 md:hwp-py-0">
+      Copyright © 2025 The President and Fellows of Harvard College
+    </div>
+<div class="hwp-global-footer__menu hwp-flex hwp-flex-col md:hwp-flex-row md:hwp-gap-x-32 xl:hwp-ml-auto">
+<a class="hwp-py-12" href="https://accessibility.harvard.edu/">Accessibility</a>
+<a class="hwp-py-12" href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Digital Accessibility</a>
+<a class="hwp-py-12" href="https://www.harvard.edu/copyright-issue/">Report Copyright Infringement</a>
+<a class="hwp-py-12" href="https://hwp.harvard.edu/harvardsites-platform-information-gathering-statement">Info Practices</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Generative AI Tools – Johns Hopkins Engineering CTLD</title>
+<meta content="max-image-preview:large" name="robots">
+<link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://engineering.jhu.edu/ctld/feed/" rel="alternate" title="Johns Hopkins Engineering CTLD » Feed" type="application/rss+xml"/>
+<link href="https://engineering.jhu.edu/ctld/comments/feed/" rel="alternate" title="Johns Hopkins Engineering CTLD » Comments Feed" type="application/rss+xml"/>
+<link href="https://engineering.jhu.edu/ctld/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fengineering.jhu.edu%2Fctld%2Fchatgpt%2Fai-tools%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://engineering.jhu.edu/ctld/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fengineering.jhu.edu%2Fctld%2Fchatgpt%2Fai-tools%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/formidable/css/formidableforms.css?ver=1217011" id="formidable-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/LayerSlider/assets/static/layerslider/css/layerslider.css?ver=8.1.2" id="layerslider-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://engineering.jhu.edu/ctld/wp-includes/css/dist/block-library/style.min.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/aislin-plugin/public/css/app.css?ver=4.2.0" id="aislin-plugin-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/aislin-plugin/public/css/style.css?ver=4.2.0" id="aislin-plugin-style-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/smart-grid-gallery/includes/dist/sgg.min.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="smart-grid-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/aislin-plugin/packages/elementor/assets/css/main.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="aislin-plugin-elementor-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/aislin-plugin/src/Integration/WP_Widgets/Personal_Contact_Info/css/wp-styles.css?ver=1.0" id="aislin-pci-wp-css-css" media="" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=8.7.2" id="js_composer_front-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=3.21.2" id="bsf-Defaults-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled/assets/css/groundwork-responsive.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="groundwork-grid-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" id="font-awesome-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled/assets/css/theme-icons.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="skilled-theme-icons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled/style.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="skilled-style-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled/assets/css/iconsmind-line-icons.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="iconsmind-line-icons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled/assets/css/linear-icons.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="linear-icons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled-child/css/owl.carousel.min.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="owl-carousel-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled-child/css/jquery-ui.min.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="jquery-ui-datepicker-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/themes/skilled-child/style.css?ver=1767110272" id="child-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/aislin-plugin/packages/assets/assets/css/magnific-popup.css?ver=b5b7eb495ab2f27aae5fc5b6ec0dbf0b" id="magnific-popup-css" media="all" rel="stylesheet" type="text/css"/>
+<link as="style" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CRaleway:600,700&amp;subset=latin&amp;display=swap&amp;ver=1739981316" rel="preload"/><link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CRaleway:600,700&amp;subset=latin&amp;display=swap&amp;ver=1739981316" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CRaleway:600,700&amp;subset=latin&amp;display=swap&amp;ver=1739981316" rel="stylesheet"/></noscript><link href="//engineering.jhu.edu/ctld/wp-content/uploads/skilled_options_style.css?ver=1739981316" id="skilled_options_style-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+<meta content="Powered by LayerSlider 8.1.2 - Build Heros, Sliders, and Popups. Create Animations and Beautiful, Rich Web Content as Easy as Never Before on WordPress." name="generator">
+<!-- LayerSlider updates and docs at: https://layerslider.com -->
+<link href="https://engineering.jhu.edu/ctld/wp-json/" rel="https://api.w.org/"/><link href="https://engineering.jhu.edu/ctld/wp-json/wp/v2/pages/4328" rel="alternate" title="JSON" type="application/json"/><link href="https://engineering.jhu.edu/ctld/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://engineering.jhu.edu/ctld/chatgpt/ai-tools/" rel="canonical"/>
+<link href="https://engineering.jhu.edu/ctld/?p=4328" rel="shortlink"/>
+<meta content="Redux 4.5.9" name="generator"/>
+
+<meta content="Elementor 3.34.0; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap" name="generator"/>
+ 
+<meta content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." name="generator">
+<link href="https://engineering.jhu.edu/ctld/wp-content/uploads/2024/10/cropped-JHU-Shield-Icon-32x32.png" rel="icon" sizes="32x32"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/uploads/2024/10/cropped-JHU-Shield-Icon-192x192.png" rel="icon" sizes="192x192"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/uploads/2024/10/cropped-JHU-Shield-Icon-180x180.png" rel="apple-touch-icon"/>
+<meta content="https://engineering.jhu.edu/ctld/wp-content/uploads/2024/10/cropped-JHU-Shield-Icon-270x270.png" name="msapplication-TileImage"/>
+
+<noscript></noscript></meta></meta></meta></head>
+<body class="wp-singular page-template page-template-template-fullwidth-no-title page-template-template-fullwidth-no-title-php page page-id-4328 page-child parent-pageid-4228 wp-theme-skilled wp-child-theme-skilled-child header-top page-title-enabled wpb-js-composer js-comp-ver-8.7.2 vc_responsive elementor-default elementor-kit-6017">
+<div class="top-bar">
+<ul class="menu" id="menu-quick-links"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1755" id="menu-item-1755"><a href="https://engineering.jhu.edu/ctld/team/">CTLD Team</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5918" id="menu-item-5918"><a href="https://facultyforward.jhu.edu/">Faculty Forward Academy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-4354" id="menu-item-4354"><a href="https://engineering.jhu.edu/ctld/chatgpt/">Generative AI</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1757" id="menu-item-1757"><a href="https://support.cldt.jhu.edu/hc/en-us">Support Center</a></li>
+</ul> </div>
+<div class="header-mobile">
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1709223828897 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1498731873916"><div class="wpb_wrapper"><div class="respmenu-wrap" id="wh-mobile-menu">
+<div class="respmenu-header">
+<a class="respmenu-header-logo-link" href="https://engineering.jhu.edu/ctld/">
+<img alt="mobile-logo" class="respmenu-header-logo" src="https://engineering.jhu.edu/ctld/wp-content/uploads/2025/02/jhu-wse-logo-small-e1612651365697.png"/>
+</a>
+<div class="respmenu-open">
+<hr/>
+<hr/>
+<hr/>
+</div>
+</div>
+<div class="menu-main-menu-container"><ul class="respmenu" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5906" id="menu-item-5906"><a href="https://engineering.jhu.edu/ctld/learning-design/">Learning Design</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5903" id="menu-item-5903"><a href="https://engineering.jhu.edu/ctld/faculty-development/">Faculty Development</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5915" id="menu-item-5915"><a href="https://engineering.jhu.edu/ctld/quality-assurance/">Quality Assurance</a></li>
+</ul></div></div>
+<div class="vc_pull-left"><ul class="sf-menu wh-menu-top" id="menu-main-right-menu"><li class="search-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-1748" id="menu-item-1748"><a href="#">Search</a></li>
+</ul></div>
+<div class="wpb_raw_code wpb_raw_html wpb_content_element header-search" id="header-search">
+<div class="wpb_wrapper">
+<form action="https://engineering.jhu.edu/cldt/" class="search-form" method="get"><input class="search-input" id="search-input" name="s" placeholder="Search" type="text" value=""/><input type="submit" value="Submit"/></form>
+</div>
+</div>
+</div></div></div></div> </div>
+<div class="cbp-row wh-header top">
+<div class="vc_row wpb_row vc_row-fluid overflow-visible vc_custom_1634034604375" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-full-width-temp="true" data-vc-stretch-content="true"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner vc_custom_1497355882172"><div class="wpb_wrapper"><div class="wh-logo wh-logo wpb_single_image wpb_content_element vc_align_left vc_custom_1499082227376">
+<a href="https://engineering.jhu.edu/ctld/">
+<img alt="logo" src="https://engineering.jhu.edu/ctld/wp-content/uploads/2025/02/jhu-wse-logo-small-e1612651365697.png"/>
+</a>
+</div>
+</div></div></div><div class="width-auto pull-left main-navigation wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1626354851715"><div class="wpb_wrapper"><div class="cbp-container wh-menu-center vc_custom_1624571060441" id="cbp-menu-main"><ul class="sf-menu wh-menu-main" id="menu-main-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5906"><a href="https://engineering.jhu.edu/ctld/learning-design/">Learning Design</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5903"><a href="https://engineering.jhu.edu/ctld/faculty-development/">Faculty Development</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5915"><a href="https://engineering.jhu.edu/ctld/quality-assurance/">Quality Assurance</a></li>
+</ul></div><div class="vc_icon_element vc_icon_element-outer vc_do_icon hidden vc_icon_element-align-left"><div class="vc_icon_element-inner vc_icon_element-color-blue vc_icon_element-size-md vc_icon_element-style- vc_icon_element-background-color-grey"><span class="vc_icon_element-icon fas fa-adjust"></span></div></div></div></div></div><div class="width-auto pull-right quick-navigation wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1626354983590"><div class="wpb_wrapper"><div class="vc_pull-right vc_custom_1624571438735"><ul class="sf-menu wh-menu-top" id="menu-main-right-menu-1"><li class="search-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-1748"><a href="#">Search</a></li>
+</ul></div>
+<div class="wpb_raw_code wpb_raw_html wpb_content_element header-search">
+<div class="wpb_wrapper">
+<form action="https://engineering.jhu.edu/cldt/" class="search-form" method="get"><input class="search-input" id="search-input" name="s" placeholder="Search" type="text" value=""/><input type="submit" value="Submit"/></form>
+</div>
+</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div> </div>
+<div class="cbp-row wh-content">
+<div class="cbp-container">
+<div class="entry-content one whole wh-padding">
+<div class="wpb-content-wrapper"><div class="vc_row wpb_row vc_row-fluid vc_custom_1636460314386"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_raw_code wpb_raw_html wpb_content_element">
+<div class="wpb_wrapper">
+<div class="ls-wp-container fitvidsignore ls-selectable" id="layerslider_10_11zvaw2y2ml7j" style="width:1200px;height:50px;margin:0 auto;"><div class="ls-slide"><img alt="" class="ls-l ls-img-layer" decoding="async" fetchpriority="high" height="800" sizes="(max-width: 1600px) 100vw, 1600px" src="https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/bigstock-Artificial-Intelligence-Concep-398546027.jpg" srcset="https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/bigstock-Artificial-Intelligence-Concep-398546027.jpg 1600w, https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/bigstock-Artificial-Intelligence-Concep-398546027-300x150.jpg 300w, https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/bigstock-Artificial-Intelligence-Concep-398546027-1024x512.jpg 1024w, https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/bigstock-Artificial-Intelligence-Concep-398546027-540x270.jpg 540w" style="font-size:36px;stroke:#000;stroke-width:0px;text-align:left;font-style:normal;text-decoration:none;text-transform:none;font-weight:400;letter-spacing:0px;background-position:0% 0%;background-repeat:no-repeat;background-clip:border-box;overflow:visible;top:0px;left:2px;width:1198px;height:599px;-webkit-background-clip:border-box;" width="1600"/><a class="ls-l" href="https://engineering.jhu.edu/ctld/chatgpt/" style="" target="_self"><ls-layer class="ls-button-layer" style="font-size:13px;text-align:center;text-transform:uppercase;font-weight:600;padding-top:0.7em;padding-bottom:0.7em;padding-right:1.85em;padding-left:1.85em;font-family:Tahoma;background-color:#fff;border-radius:10em;cursor:pointer;left:16px;top:8px;color:#002d72;">Home</ls-layer></a><a class="ls-l" href="https://engineering.jhu.edu/ctld/chatgpt/ai-resources/" style="" target="_self"><ls-layer class="ls-button-layer" style="font-size:13px;text-align:center;text-transform:uppercase;font-weight:600;padding-top:0.7em;padding-bottom:0.7em;padding-right:1.85em;padding-left:1.85em;font-family:Tahoma;background-color:#fff;border-radius:10em;cursor:pointer;left:1031px;top:8px;color:#002d72;">AI Resources</ls-layer></a><a class="ls-l" href="https://engineering.jhu.edu/ctld/chatgpt/assessments" style="" target="_self"><ls-layer class="ls-button-layer" style="font-size:13px;text-align:center;text-transform:uppercase;font-weight:600;padding-top:0.7em;padding-bottom:0.7em;padding-right:1.85em;padding-left:1.85em;font-family:Tahoma;background-color:#fff;border-radius:10em;cursor:pointer;left:873px;top:8px;color:#002d72;">Assessments</ls-layer></a><a class="ls-l" href="https://engineering.jhu.edu/ctld/chatgpt/student-use-of-generative-ai/" style="" target="_self"><ls-layer class="ls-button-layer" style="font-size:13px;text-align:center;text-transform:uppercase;font-weight:600;padding-top:0.7em;padding-bottom:0.7em;padding-right:1.85em;padding-left:1.85em;font-family:Tahoma;background-color:#fff;border-radius:10em;cursor:pointer;left:679px;top:8px;color:#002d72;">Student use of ai</ls-layer></a><a class="ls-l" href="https://engineering.jhu.edu/ctld/chatgpt/ethics-privacy/" style="" target="_self"><ls-layer class="ls-button-layer" style="font-size:13px;text-align:center;text-transform:uppercase;font-weight:600;padding-top:0.7em;padding-bottom:0.7em;padding-right:1.85em;padding-left:1.85em;font-family:Tahoma;background-color:#fff;border-radius:10em;cursor:pointer;left:285px;top:8px;color:#002d72;">Edtech &amp; ethics</ls-layer></a><a class="ls-l" href="https://engineering.jhu.edu/ctld/chatgpt/academic-integrity/" style="" target="_self"><ls-layer class="ls-button-layer" style="font-size:13px;text-align:center;text-transform:uppercase;font-weight:600;padding-top:0.7em;padding-bottom:0.7em;padding-right:1.85em;padding-left:1.85em;font-family:Tahoma;background-color:#fff;border-radius:10em;cursor:pointer;left:467px;top:8px;color:#002d72;">Academic Integrity</ls-layer></a><a class="ls-l" href="https://engineering.jhu.edu/ctld/chatgpt/ai-tools/" style="" target="_self"><ls-layer class="ls-button-layer" style="font-size:13px;text-align:center;text-transform:uppercase;font-weight:600;padding-top:0.7em;padding-bottom:0.7em;padding-right:1.85em;padding-left:1.85em;font-family:Tahoma;background-color:#fff;border-radius:10em;cursor:pointer;left:118px;top:8px;color:#002d72;">Generative AI</ls-layer></a></div></div>
+</div>
+</div>
+</div></div></div></div><h1 class="vc_custom_heading vc_do_custom_heading" style="color: #012e5b;text-align: left">Generative AI</h1>
+<div class="wpb_text_column wpb_content_element">
+<div class="wpb_wrapper">
+<p><span data-contrast="auto">Almost everyone in higher education is talking about ChatGPT—but what is it and how does it work? In simple terms, ChatGPT uses generative AI technology, which is a form of artificial intelligence (AI) that specializes in producing new content. From images and text to music and videos, generative AI utilizes existing data to train models that recognize patterns and sequences. With this information tools are able to generate new content that mirrors the original data—in the case of ChatGPT this takes the form of text-based responses to user prompts. </span><span data-ccp-props="{}"> </span></p>
+</div>
+</div>
+<h3 class="vc_custom_heading vc_do_custom_heading" style="color: #012e5b;text-align: left">Generative AI Tools - A Closer Look</h3>
+<div class="wpb_text_column wpb_content_element">
+<div class="wpb_wrapper">
+<p><span data-contrast="auto">Since generative AI services such as ChatGPT excel at mimicking human-generated content, there are opportunities and risks in the application of these emerging technologies. It can be difficult to distinguish the outputs of these tools from human-generated content, so concerns in higher education center on potential risks to <a href="https://engineering.jhu.edu/ctld/chatgpt/academic-integrity/" rel="noopener" target="_blank">academic integrity</a>.  </span></p>
+</div>
+</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_single_image wpb_content_element vc_align_left wpb_content_element">
+<figure class="wpb_wrapper vc_figure">
+<div class="vc_single_image-wrapper vc_box_border_grey"><img alt="" class="vc_single_image-img attachment-full" decoding="async" height="1280" sizes="(max-width: 1920px) 100vw, 1920px" src="https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/AI-One.jpg" srcset="https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/AI-One.jpg 1920w, https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/AI-One-300x200.jpg 300w, https://engineering.jhu.edu/ctld/wp-content/uploads/2023/06/AI-One-1024x683.jpg 1024w" title="AI-One" width="1920"/></div>
+</figure>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element">
+<div class="wpb_wrapper">
+<p><span data-contrast="auto">Generative AI relies on advanced techniques like deep learning and generative models such as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs). GANs feature two critical components – the generator and the discriminator. The generator creates new content, while the discriminator evaluates its authenticity against real data. By constantly iterating and improving the model, the generator and discriminator produce increasingly realistic and high-quality generated content.</span><span data-ccp-props="{}"> </span></p>
+<p><span class="NormalTextRun SCXW138708717 BCX0">Since new AI tools and services are developed </span><span class="NormalTextRun SCXW138708717 BCX0">almost daily</span><span class="NormalTextRun SCXW138708717 BCX0">, it is difficult to maintain a comprehensive list of examples. However, the following link provides a curated list of examples, including ones</span><span class="NormalTextRun SCXW138708717 BCX0"> that come up in our conversations with faculty.</span></p>
+</div>
+</div>
+<div class="vc_btn3-container cldt-button vc_btn3-center vc_do_btn"><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-gradient-custom vc_btn-gradient-btn-6953f680af550" data-vc-gradient-1="#002d72" data-vc-gradient-2="#0072ce" href="https://github.com/steven2358/awesome-generative-ai" target="_blank" title="">View Generative AI Tools</a></div></div></div></div></div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey wpb_content_element wpb_content_element"><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+</div><h3 class="vc_custom_heading vc_do_custom_heading" style="color: #012e5b;text-align: left">AI Detection Tools</h3>
+<div class="wpb_text_column wpb_content_element">
+<div class="wpb_wrapper">
+<p><span data-contrast="auto"><span class="TextRun SCXW136375274 BCX0" data-contrast="auto" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun SCXW136375274 BCX0">Advancements in generative AI technologies are outpacing development of tools designed to detect their usage. While numerous AI detection tools (e.g., <a href="https://www.turnitin.com/" rel="noopener" target="_blank">Turnitin</a>, <a href="https://gptzero.me/" rel="noopener" target="_blank">GPTZero</a>, <a href="https://copyleaks.com/ai-content-detector" rel="noopener" target="_blank">Copyleaks</a>, and <a href="https://originality.ai/" rel="noopener" target="_blank">Originality AI</a>) are available, testing indicates a wide range in the accuracy and efficacy of these tools—including missed AI content detection and false positives. Because of this, CTLD does not endorse any AI detection tool.</span></span></span></p>
+</div>
+</div>
+</div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cbp-row wh-footer">
+<div class="cbp-container wh-padding">
+<div class="vc_row wpb_row vc_row-fluid stay-connected"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element">
+<div class="wpb_wrapper">
+<h2><img alt="" class="alignnone wp-image-845 size-thumbnail" height="150" src="https://lifelonglearning.jhu.edu/wp-content/uploads/2021/09/connect.svg" width="150"> Stay Connected</img></h2>
+</div>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element">
+<div class="wpb_wrapper">
+<ul>
+<li><a href="https://onehop.jhu.edu/" rel="noopener" target="_blank"><img alt="" height="22" src="https://lifelonglearning.jhu.edu/wp-content/uploads/2021/09/oneshop.svg" width="24">OneHop</img></a></li>
+<li><a href="https://www.facebook.com/jhuengineering" rel="noopener" target="_blank"><img alt="" height="20" src="https://lifelonglearning.jhu.edu/wp-content/uploads/2021/09/facebook.svg" width="20"/>Facebook</a></li>
+<li><a href="https://twitter.com/HopkinsEngineer" rel="noopener" target="_blank"><img alt="" height="20" src="https://lifelonglearning.jhu.edu/wp-content/uploads/2021/09/twitter.svg" width="20"/>Twitter</a></li>
+<li><a href="https://www.instagram.com/hopkinsengineer/" rel="noopener" target="_blank"><img alt="" height="20" src="https://lifelonglearning.jhu.edu/wp-content/uploads/2021/09/instagram.svg" width="20"/>Instagram</a></li>
+<li><a href="https://www.youtube.com/user/HopkinsEngineer" rel="noopener" target="_blank"><img alt="" height="20" src="https://lifelonglearning.jhu.edu/wp-content/uploads/2021/09/youtube.svg" width="20"/>YouTube</a></li>
+<li><a href="https://www.linkedin.com/school/johns-hopkins-whiting-school-of-engineering/" rel="noopener" target="_blank"><img alt="" height="20" src="https://lifelonglearning.jhu.edu/wp-content/uploads/2021/09/linkedin.svg" width="20"/>LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</div></div></div></div><section class="vc_section"><div class="vc_row wpb_row vc_row-fluid vc_custom_1620341055083" id="footer-top"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1623424312570"><div class="wpb_wrapper"><h3 class="vc_custom_heading vc_do_custom_heading wse-footer vc_custom_1729177214550" style="font-size: 18px;color: #ffffff;text-align: left">Center for Teaching &amp; Learning Design</h3><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="footer-contact-column wpb_column vc_column_container vc_col-sm-12 vc_col-xs-6" id="footer-contact-column"><div class="vc_column-inner vc_custom_1626270667250"><div class="wpb_wrapper"><h5 class="vc_custom_heading vc_do_custom_heading wse-contact-footer vc_custom_1623423418805" style="font-size: 18px;color: #ffffff;text-align: left">Contact</h5><div class="vc_custom_heading vc_do_custom_heading vc_custom_1729176755354" style="font-size: 15px;text-align: left"><a href="mailto:CTLD@jhu.edu" target="_blank" title="Email address for Johns Hopkins Engineering CTLD">CTLD@jhu.edu</a></div></div></div></div></div></div></div></div><div class="get-in-touch-block footer-links-column wpb_column vc_column_container vc_col-sm-4" id="footer-links-column"><div class="vc_column-inner vc_custom_1626270712582"><div class="wpb_wrapper"><h5 class="vc_custom_heading vc_do_custom_heading vc_custom_1623423989775" style="font-size: 18px;color: #ffffff;text-align: left"><a href="https://jhu.edu" target="_blank" title="Johns Hopkins University">Johns Hopkins University</a></h5><p class="vc_custom_heading vc_do_custom_heading vc_custom_1623424063560" style="font-size: 14px;color: #ffffff;line-height: 23px;text-align: left"><a href="https://engineering.jhu.edu" target="_blank" title="JHU Whiting School of Engineering">Whiting School of Engineering</a></p><p class="vc_custom_heading vc_do_custom_heading vc_custom_1623424089892" style="font-size: 14px;color: #ffffff;line-height: 23px;text-align: left"><a href="https://ep.jhu.edu" target="_blank" title="JHU Engineering for Professionals">Engineering for Professionals</a></p></div></div></div></div><!-- Row Backgrounds --><div class="upb_color" data-bg-color="" data-bg-override="0" data-custom-vc-row="" data-fadeout="" data-fadeout-percentage="30" data-img-parallax-mobile-disable="true" data-is_old_vc="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size="" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-rtl="false" data-theme-support="" data-vc="8.7.2"></div><div class="vc_row wpb_row vc_row-fluid footerll footer-additional-links"><div class="wpb_column vc_column_container vc_col-sm-2 vc_col-xs-6"><div class="vc_column-inner vc_custom_1620340941662"><div class="wpb_wrapper"><p class="vc_custom_heading vc_do_custom_heading" style="font-size: 14px;color: #ffffff;text-align: left"><a href="https://it.johnshopkins.edu/policies/privacystatement" target="_blank" title="JHU Privacy Statement">Privacy Statement</a></p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner vc_custom_1620340932831"><div class="wpb_wrapper"><p class="vc_custom_heading vc_do_custom_heading" style="font-size: 14px;color: #ffffff;text-align: left"><a href="https://accessibility.jhu.edu/" target="_blank" title="JHU accessibility information">Accessibility</a></p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner vc_custom_1620340911809"><div class="wpb_wrapper"><p class="vc_custom_heading vc_do_custom_heading" style="font-size: 14px;color: #ffffff;text-align: left"><a href="https://www.jhu.edu/university-policies/" target="_blank" title="JH University Policies">University Policies</a></p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2 vc_col-xs-6"><div class="vc_column-inner vc_custom_1620339500417"><div class="wpb_wrapper"><p class="vc_custom_heading vc_do_custom_heading" style="font-size: 14px;color: #ffffff;text-align: left"><a href="https://www.jhu.edu/assets/uploads/2016/11/compliance_policy.pdf" target="_blank" title="JHU Copyright Compliance Policy">Copyright Policy</a></p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><p class="vc_custom_heading vc_do_custom_heading" style="font-size: 14px;color: #ffffff;text-align: right">© 2021 Johns Hopkins University. All rights reserved.</p></div></div></div></div></section> </div>
+</div>
+
+
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/js_composer/assets/lib/vendor/dist/@fortawesome/fontawesome-free/css/v4-shims.min.css?ver=8.7.2" id="vc_font_awesome_5_shims-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/js_composer/assets/lib/vendor/dist/@fortawesome/fontawesome-free/css/all.min.css?ver=8.7.2" id="vc_font_awesome_6-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://engineering.jhu.edu/ctld/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/background-style.min.css?ver=3.21.2" id="ultimate-vc-addons-background-style-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!--[if lt IE 3]> SRV:  WA22a <![endif]-->
+</html>
+<!-- plugin=object-cache-pro client=phpredis metric#hits=3707 metric#misses=42 metric#hit-ratio=98.9 metric#bytes=2543003 metric#prefetches=0 metric#store-reads=110 metric#store-writes=28 metric#store-hits=93 metric#store-misses=32 metric#sql-queries=28 metric#ms-total=209.59 metric#ms-cache=9.03 metric#ms-cache-avg=0.0659 metric#ms-cache-ratio=4.3 sample#redis-hits=23260597 sample#redis-misses=1725697 sample#redis-hit-ratio=93.1 sample#redis-ops-per-sec=110 sample#redis-evicted-keys=0 sample#redis-used-memory=365299480 sample#redis-used-memory-rss=391192576 sample#redis-memory-fragmentation-ratio=1.1 sample#redis-connected-clients=2 sample#redis-tracking-clients=0 sample#redis-rejected-connections=0 sample#redis-keys=599 -->

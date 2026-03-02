@@ -1,0 +1,26 @@
+id,univ_name_cn,univ_name_en,shanghairank_2025,Inst_type,B_check_framework,B_tool_specified,B_linked_to_pass,A_check_framework,A_tool_specified,A_linked_to_pass
+1,清华大学,Tsinghua University,1,综合,0,0,0,0,0,0
+2,北京大学,Peking University,2,综合,0,0,0,0,0,0
+3,浙江大学,Zhejiang University,3,综合,1,1,1,1,1,0
+4,上海交通大学,Shanghai Jiao Tong University,4,综合,0,0,0,0,0,0
+5,复旦大学,Fudan University,5,综合,0,0,0,0,0,0
+6,南京大学,Nanjing University,6,综合,1,1,0,1,1,0
+7,中国科学技术大学,University of Science and Technology of China,7,理工,0,0,0,0,0,0
+8,武汉大学,Wuhan University,8,综合,0,0,0,0,0,0
+9,华中科技大学,Huazhong University of Science and Technology,9,综合,1,1,1,1,1,1
+10,西安交通大学,Xi'an Jiaotong University,10,综合,0,0,0,0,0,0
+11,北京航空航天大学,Beihang University,11,理工,0,0,0,0,0,0
+14,北京协和医学院,Peking Union Medical College,医1,医药,0,0,0,0,0,0
+15,哈尔滨工业大学,Harbin Institute of Technology,14,理工,0,0,0,0,0,0
+20,北京师范大学,Beijing  Normal University,19,师范,0,0,0,0,0,0
+21,天津大学,Tianjin University,20,理工,0,0,0,0,0,0
+22,西北工业大学,Northwestern Polytechnical University,21,理工,0,0,0,0,0,0
+29,大连理工大学,Dalian University of Technology,28,理工,0,0,0,0,0,0
+31,华东师范大学,East China Normal University,30,师范,0,0,0,0,0,0
+32,华南理工大学,South China University of Technology,31,理工,0,0,0,0,0,0
+34,电子科技大学,University of Electronic Science and Technology of China,33,理工,0,0,0,0,0,0
+37,上海财经大学,Shanghai University of Finance and Economics,财1,财经,0,0,0,0,0,0
+73,北京中医药大学,Beijing University of Chinese Medicine,中医1,中医药,0,0,0,0,0,0
+86,西北农林科技大学,Northwest A&F University,71,农业,1,1,1,1,1,1
+101,中央民族大学,Minzu University of China,民1,民族,0,0,0,0,0,0
+105,北京外国语大学,Beijing Foreign Studies University,语1,语言,0,0,0,0,0,0
