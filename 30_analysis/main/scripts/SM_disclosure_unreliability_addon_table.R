@@ -36,8 +36,8 @@ intl <- read.csv(intl_input_file, stringsAsFactors = FALSE, check.names = FALSE)
 
 required_cols <- c(
   "sample_group",
-  "ai_use_disclosure_statement",
-  "error_limitation_disclosure",
+  "d1_harmonized",
+  "d2_harmonized",
   "d3_responsibility",
   "d4_ai_as_aid"
 )
@@ -73,24 +73,24 @@ fmt_mean <- function(x) {
 }
 
 intl_score <- rowSums(intl[, c("D1", "D2", "D3", "D4")], na.rm = TRUE)
-china_score <- d$error_limitation_disclosure + d$ai_use_disclosure_statement + d$d3_responsibility + d$d4_ai_as_aid
-mandated_score <- mandated$error_limitation_disclosure + mandated$ai_use_disclosure_statement + mandated$d3_responsibility + mandated$d4_ai_as_aid
-governance_score <- governance$error_limitation_disclosure + governance$ai_use_disclosure_statement + governance$d3_responsibility + governance$d4_ai_as_aid
+china_score <- d$d1_harmonized + d$d2_harmonized + d$d3_responsibility + d$d4_ai_as_aid
+mandated_score <- mandated$d1_harmonized + mandated$d2_harmonized + mandated$d3_responsibility + mandated$d4_ai_as_aid
+governance_score <- governance$d1_harmonized + governance$d2_harmonized + governance$d3_responsibility + governance$d4_ai_as_aid
 
 rows <- list(
   c(
-    "D1. Detector unreliability/error-limitation warning stated",
+    "D1. Technical limits/uncertainty warning stated (AI outputs and/or detectors)",
     fmt_np(sum(intl$D1 == 1, na.rm = TRUE), intl_n),
-    fmt_np(sum(d$error_limitation_disclosure == 1, na.rm = TRUE), all_n),
-    fmt_np(sum(mandated$error_limitation_disclosure == 1, na.rm = TRUE), mandated_n),
-    fmt_np(sum(governance$error_limitation_disclosure == 1, na.rm = TRUE), governance_n)
+    fmt_np(sum(d$d1_harmonized == 1, na.rm = TRUE), all_n),
+    fmt_np(sum(mandated$d1_harmonized == 1, na.rm = TRUE), mandated_n),
+    fmt_np(sum(governance$d1_harmonized == 1, na.rm = TRUE), governance_n)
   ),
   c(
-    "D2. AI-use disclosure/declaration statement required",
+    "D2. Proactive governance (disclosure and/or process controls) stated",
     fmt_np(sum(intl$D2 == 1, na.rm = TRUE), intl_n),
-    fmt_np(sum(d$ai_use_disclosure_statement == 1, na.rm = TRUE), all_n),
-    fmt_np(sum(mandated$ai_use_disclosure_statement == 1, na.rm = TRUE), mandated_n),
-    fmt_np(sum(governance$ai_use_disclosure_statement == 1, na.rm = TRUE), governance_n)
+    fmt_np(sum(d$d2_harmonized == 1, na.rm = TRUE), all_n),
+    fmt_np(sum(mandated$d2_harmonized == 1, na.rm = TRUE), mandated_n),
+    fmt_np(sum(governance$d2_harmonized == 1, na.rm = TRUE), governance_n)
   ),
   c(
     "D3. Student retains responsibility for submitted content",
@@ -146,7 +146,7 @@ md_lines <- c(
   "",
   to_md_table(tab),
   "",
-  "Note. Cells report n (% within group). D1 captures explicit language about detector technical limits or uncertain accuracy. D2 captures explicit requirements to document AI-tool use in thesis statements/forms/sections. D3 captures explicit statements that students retain responsibility for submitted work. D4 captures explicit framing of AI as a permissible aid under conditions."
+  "Note. Cells report n (% within group). D1 captures explicit language about technical limits/uncertainty of AI outputs and/or detector tools, including non-dispositive use language. D2 captures proactive governance features, including disclosure/declaration requirements and process controls that structure AI use beyond post-hoc detection alone. D3 captures explicit statements that students retain responsibility for submitted work. D4 captures explicit framing of AI as a permissible aid under conditions."
 )
 writeLines(md_lines, output_md, useBytes = TRUE)
 

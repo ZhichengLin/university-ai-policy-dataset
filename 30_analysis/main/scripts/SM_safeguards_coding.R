@@ -28,6 +28,7 @@ dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 output_coding <- file.path(output_dir, "SM_china_safeguards_coding.csv")
 output_evidence <- file.path(output_dir, "SM_china_safeguards_evidence.csv")
 output_qc <- file.path(output_dir, "SM_china_safeguards_qc_discordance.csv")
+output_adjudication <- file.path(output_dir, "SM_china_d1d2_harmonized_adjudication_37.csv")
 
 to_int <- function(x) suppressWarnings(as.integer(trimws(as.character(x))))
 norm_space <- function(x) gsub("[[:space:]]+", " ", trimws(gsub("[\r\n]+", " ", x)))
@@ -44,6 +45,17 @@ extract_full_policy_text <- function(path) {
     txt <- paste(lines, collapse = "\n")
   }
   trimws(txt)
+}
+
+is_informative_policy_text <- function(txt, min_chars = 30L) {
+  if (is.na(txt) || !nzchar(trimws(txt))) {
+    return(FALSE)
+  }
+  z <- txt
+  z <- gsub("###\\s*Page\\s*[0-9]+", " ", z, perl = TRUE)
+  z <- gsub("\\[No extractable text on this page\\]", " ", z, fixed = TRUE)
+  z <- gsub("[[:space:][:punct:]]+", "", z, perl = TRUE)
+  nchar(z) >= min_chars
 }
 
 first_match_info <- function(text, pattern) {
@@ -175,8 +187,16 @@ score_safeguards <- function(text) {
   patt_limit <- paste0(
     "(",
     "technical limitation|limitations|error rate|false positive|false negative|uncertainty|probabilistic|",
+    "hallucination|opaque|black[- ]?box|",
+    "reliability[^。；;,.]{0,35}(not|uncertain|limited|insufficient|immature)|",
+    "effectiveness[^。；;,.]{0,35}(not|uncertain|limited|insufficient|immature)|",
+    "reliability\\s+and\\s+effectiveness[^。；;,.]{0,35}(not|uncertain|limited|insufficient|immature)|",
     "检测效果尚不明确|效果尚不明确|准确性尚不明确|",
-    "技术限制|技术局限|局限性|误差|误判|准确率|假阳性|假阴性|不确定性|概率分析|概率模型",
+    "可靠性[^。；;，,]{0,20}(不足|有限|不高|不稳定|尚不明确|尚未验证)|",
+    "有效性[^。；;，,]{0,20}(不足|有限|不高|不稳定|尚不明确|尚未验证)|",
+    "可靠性和有效性[^。；;，,]{0,20}(不足|有限|不高|不稳定|尚不明确|尚未验证)|",
+    "技术限制|技术局限|局限性|误差|误判|准确率|假阳性|假阴性|不确定性|概率分析|概率模型|",
+    "黑箱|不透明|幻觉",
     ")"
   )
   patt_disclosure <- paste0(
@@ -236,12 +256,24 @@ score_safeguards <- function(text) {
     "不能替代[^。；;]*(独立思考|原创性贡献)",
     ")"
   )
+  patt_proactive_process <- paste0(
+    "(",
+    "prompt\\s+history|prompt\\s+log|process\\s+log|draft\\s+history|",
+    "separate[^。；;,.]{0,40}(ai-assisted|ai generated|ai-generated)[^。；;,.]{0,40}(original|author)|",
+    "(ai|aigc|人工智能)[^。；;，,]{0,26}(过程记录|日志|版本记录|留存|保存)|",
+    "(过程记录|日志|版本记录)[^。；;，,]{0,20}(ai|aigc|人工智能)|",
+    "区分[^。；;，,]{0,30}(ai|aigc|人工智能)[^。；;，,]{0,30}(生成|辅助)[^。；;，,]{0,30}(原创|本人)|",
+    "(答辩|口试)[^。；;，,]{0,24}(核验|询问|真实性|原始材料)[^。；;，,]{0,24}(ai|aigc|人工智能)|",
+    "(ai|aigc|人工智能)[^。；;，,]{0,24}(核验|询问|真实性|原始材料)[^。；;，,]{0,24}(答辩|口试)",
+    ")"
+  )
 
   hit_human <- first_match_with_context(text, patt_human, detector_context_ai)
   hit_appeal <- first_match_with_context(text, patt_appeal, detector_context_ai)
   hit_not_sole <- first_match_with_context(text, patt_not_sole, detector_context_ai)
   hit_limit <- first_match_with_context(text, patt_limit, detector_context_ai)
   hit_disclosure <- first_match_with_context(text, patt_disclosure, detector_context_disclosure, window = 200L)
+  hit_proactive <- first_match_with_context(text, patt_proactive_process, detector_context_disclosure, window = 140L)
   hit_responsibility <- first_match_with_context(text, patt_responsibility, detector_context_disclosure, window = 220L)
   hit_ai_as_aid <- first_match_with_context(text, patt_ai_as_aid, detector_context_disclosure, window = 220L)
 
@@ -270,6 +302,38 @@ score_safeguards <- function(text) {
     list(hit = 0L, keyword = "", excerpt = "")
   }
 
+  d1_harmonized_hit <- as.integer(hit_limit$hit == 1L | hit_not_sole$hit == 1L)
+  d1_harmonized_keyword <- if (hit_limit$hit == 1L) {
+    hit_limit$keyword
+  } else if (hit_not_sole$hit == 1L) {
+    hit_not_sole$keyword
+  } else {
+    ""
+  }
+  d1_harmonized_excerpt <- if (hit_limit$hit == 1L) {
+    hit_limit$excerpt
+  } else if (hit_not_sole$hit == 1L) {
+    hit_not_sole$excerpt
+  } else {
+    ""
+  }
+
+  d2_harmonized_hit <- as.integer(hit_disclosure$hit == 1L | hit_proactive$hit == 1L)
+  d2_harmonized_keyword <- if (hit_disclosure$hit == 1L) {
+    hit_disclosure$keyword
+  } else if (hit_proactive$hit == 1L) {
+    hit_proactive$keyword
+  } else {
+    ""
+  }
+  d2_harmonized_excerpt <- if (hit_disclosure$hit == 1L) {
+    hit_disclosure$excerpt
+  } else if (hit_proactive$hit == 1L) {
+    hit_proactive$excerpt
+  } else {
+    ""
+  }
+
   list(
     code = c(
       human_review_requirement = hit_human$hit,
@@ -278,6 +342,8 @@ score_safeguards <- function(text) {
       detector_not_sole_evidence = hit_not_sole$hit,
       error_limitation_disclosure = hit_limit$hit,
       ai_use_disclosure_statement = hit_disclosure$hit,
+      d1_harmonized = d1_harmonized_hit,
+      d2_harmonized = d2_harmonized_hit,
       d3_responsibility = hit_responsibility$hit,
       d4_ai_as_aid = hit_ai_as_aid$hit
     ),
@@ -288,6 +354,8 @@ score_safeguards <- function(text) {
       detector_not_sole_evidence = hit_not_sole$keyword,
       error_limitation_disclosure = hit_limit$keyword,
       ai_use_disclosure_statement = hit_disclosure$keyword,
+      d1_harmonized = d1_harmonized_keyword,
+      d2_harmonized = d2_harmonized_keyword,
       d3_responsibility = hit_responsibility$keyword,
       d4_ai_as_aid = hit_ai_as_aid$keyword
     ),
@@ -298,6 +366,8 @@ score_safeguards <- function(text) {
       detector_not_sole_evidence = hit_not_sole$excerpt,
       error_limitation_disclosure = hit_limit$excerpt,
       ai_use_disclosure_statement = hit_disclosure$excerpt,
+      d1_harmonized = d1_harmonized_excerpt,
+      d2_harmonized = d2_harmonized_excerpt,
       d3_responsibility = hit_responsibility$excerpt,
       d4_ai_as_aid = hit_ai_as_aid$excerpt
     )
@@ -378,7 +448,8 @@ adopters$text_aux <- paste(
   ifelse(is.na(adopters$policy_summary), "", adopters$policy_summary),
   sep = "\n"
 )
-adopters$text_markdown_available <- adopters$markdown_exists & nzchar(trimws(adopters$text_markdown))
+adopters$text_markdown_available <- adopters$markdown_exists &
+  vapply(adopters$text_markdown, is_informative_policy_text, logical(1))
 adopters$text_for_coding <- ifelse(adopters$text_markdown_available, adopters$text_markdown, adopters$text_aux)
 adopters$text_source_used <- ifelse(adopters$text_markdown_available, "policy_markdown", "threshold_plus_policy_summary")
 
@@ -389,9 +460,12 @@ item_names <- c(
   "detector_not_sole_evidence",
   "error_limitation_disclosure",
   "ai_use_disclosure_statement",
+  "d1_harmonized",
+  "d2_harmonized",
   "d3_responsibility",
   "d4_ai_as_aid"
 )
+harmonized_items <- c("d1_harmonized", "d2_harmonized")
 coverage_items <- c(
   "human_review_requirement",
   "appeal_right_reply",
@@ -413,6 +487,19 @@ evidence_excerpt <- matrix("", nrow = nrow(adopters), ncol = length(item_names))
 colnames(evidence_excerpt) <- item_names
 discordance <- matrix(0L, nrow = nrow(adopters), ncol = length(item_names))
 colnames(discordance) <- item_names
+manual_override_applied <- matrix(0L, nrow = nrow(adopters), ncol = length(harmonized_items))
+colnames(manual_override_applied) <- harmonized_items
+
+# Manual adjudication overrides for harmonized D1/D2 edge cases.
+manual_override_map <- list(
+  "46" = list(
+    d1_harmonized = list(
+      value = 1L,
+      reason = "Fallback summary indicates AIGC detector reliability/effectiveness is limited in first rollout; outputs are reference-only."
+    ),
+    d2_harmonized = NULL
+  )
+)
 
 for (i in seq_len(nrow(adopters))) {
   s_md <- score_safeguards(adopters$text_markdown[i])
@@ -424,6 +511,19 @@ for (i in seq_len(nrow(adopters))) {
   final_code[i, ] <- s_final$code[item_names]
   evidence_keyword[i, ] <- s_final$keyword[item_names]
   evidence_excerpt[i, ] <- s_final$excerpt[item_names]
+
+  row_id <- as.character(adopters$id[i])
+  if (row_id %in% names(manual_override_map)) {
+    ov <- manual_override_map[[row_id]]
+    for (hn in harmonized_items) {
+      if (!is.null(ov[[hn]]) && !is.null(ov[[hn]]$value) && !is.na(ov[[hn]]$value)) {
+        final_code[i, hn] <- as.integer(ov[[hn]]$value)
+        evidence_keyword[i, hn] <- "manual_override"
+        evidence_excerpt[i, hn] <- ov[[hn]]$reason
+        manual_override_applied[i, hn] <- 1L
+      }
+    }
+  }
 
   if (adopters$text_markdown_available[i]) {
     discordance[i, ] <- as.integer(s_md$code[item_names] != s_aux$code[item_names])
@@ -449,6 +549,19 @@ coding <- adopters[, c(
 for (nm in item_names) {
   coding[[nm]] <- final_code[, nm]
 }
+default_basis <- ifelse(adopters$text_markdown_available, "markdown_direct", "fallback_summary")
+coding$d1_harmonized_basis <- ifelse(
+  manual_override_applied[, "d1_harmonized"] == 1L,
+  "manual_override",
+  default_basis
+)
+coding$d2_harmonized_basis <- ifelse(
+  manual_override_applied[, "d2_harmonized"] == 1L,
+  "manual_override",
+  default_basis
+)
+coding$d1_harmonized_evidence <- evidence_excerpt[, "d1_harmonized"]
+coding$d2_harmonized_evidence <- evidence_excerpt[, "d2_harmonized"]
 coding$safeguard_coverage_score <- rowSums(coding[, coverage_items], na.rm = TRUE)
 coding$any_md_aux_discordance <- rowSums(discordance, na.rm = TRUE)
 coding$needs_manual_check <- as.integer(coding$markdown_method == "unmapped" | coding$any_md_aux_discordance > 0)
@@ -474,22 +587,49 @@ for (i in seq_len(nrow(adopters))) {
   }
 }
 evidence <- do.call(rbind, evidence_rows)
+evidence$harmonized_basis <- ""
+map_d1_basis <- setNames(coding$d1_harmonized_basis, as.character(coding$id))
+map_d2_basis <- setNames(coding$d2_harmonized_basis, as.character(coding$id))
+is_d1 <- evidence$item == "d1_harmonized"
+is_d2 <- evidence$item == "d2_harmonized"
+evidence$harmonized_basis[is_d1] <- unname(map_d1_basis[as.character(evidence$id[is_d1])])
+evidence$harmonized_basis[is_d2] <- unname(map_d2_basis[as.character(evidence$id[is_d2])])
 qc <- subset(evidence, md_aux_discordant == 1)
 
 coding <- coding[order(-coding$linked_to_pass, -coding$safeguard_coverage_score, coding$univ_name_en), ]
 row.names(coding) <- NULL
 
+adjudication <- coding[order(coding$id), c(
+  "id",
+  "univ_name_cn",
+  "univ_name_en",
+  "sample_group",
+  "source_url",
+  "markdown_relpath",
+  "text_source_used",
+  "d1_harmonized",
+  "d1_harmonized_basis",
+  "d1_harmonized_evidence",
+  "d2_harmonized",
+  "d2_harmonized_basis",
+  "d2_harmonized_evidence"
+)]
+row.names(adjudication) <- NULL
+
 write.csv(coding, output_coding, row.names = FALSE, na = "")
 write.csv(evidence, output_evidence, row.names = FALSE, na = "")
 write.csv(qc, output_qc, row.names = FALSE, na = "")
+write.csv(adjudication, output_adjudication, row.names = FALSE, na = "")
 
 cat("Safeguard coding complete.\n")
 cat("Outputs:\n")
 cat(" - ", output_coding, "\n", sep = "")
 cat(" - ", output_evidence, "\n", sep = "")
 cat(" - ", output_qc, "\n", sep = "")
+cat(" - ", output_adjudication, "\n", sep = "")
 cat("Policies coded:", nrow(coding), "\n")
 cat(" - Mandated detection:", sum(coding$sample_group == "mandated_detection"), "\n")
 cat(" - Non-detection governance:", sum(coding$sample_group == "non_detection_governance"), "\n")
 cat("Markdown-backed rows:", sum(adopters$text_markdown_available), "\n")
 cat("Rows needing manual check:", sum(coding$needs_manual_check), "\n")
+cat("Manual overrides (harmonized D1/D2):", sum(manual_override_applied), "\n")

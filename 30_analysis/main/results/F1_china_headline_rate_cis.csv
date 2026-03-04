@@ -1,4 +1,4 @@
 "metric_id","label","n_success","n_total","proportion","ci_low","ci_high","denominator_scope","proportion_pct","ci_low_pct","ci_high_pct"
-"check_framework_rate","Mandatory check framework (all institutions)",29,128,0.2265625,0.157286735289495,0.308906547736874,"all institutions",22.65625,15.7286735289495,30.8906547736874
+"check_framework_rate","Formal check framework (all institutions)",29,128,0.2265625,0.157286735289495,0.308906547736874,"all institutions",22.65625,15.7286735289495,30.8906547736874
 "linked_to_pass_among_adopters","Linked-to-pass among adopters",19,29,0.655172413793103,0.456694272332057,0.820616350764888,"adopters only",65.5172413793103,45.6694272332057,82.0616350764888
 "tool_specified_among_adopters","Tool specified among adopters",8,29,0.275862068965517,0.12734011410223,0.472384482430034,"adopters only",27.5862068965517,12.734011410223,47.2384482430034

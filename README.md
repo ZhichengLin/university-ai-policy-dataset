@@ -1,6 +1,6 @@
 # Readme
 
-Last updated: 2026-03-02
+Last updated: 2026-03-04
 
 ## 1) Project Scope
 
@@ -82,8 +82,13 @@ Execution status log:
 
 - F1 summary stats:
   - `30_analysis/main/results/F1_china_summary.csv`
+  - `30_analysis/main/results/F1_china_headline_rate_cis.csv`
   - `30_analysis/main/results/F1_china_rank_stats.csv`
   - `30_analysis/main/results/F1_china_enforcement_regimes.csv`
+  - `30_analysis/main/results/F1_china_enforcement_depth_probabilities.csv`
+  - `30_analysis/main/results/F1_china_by_institution_type.csv`
+  - `30_analysis/main/results/F1_china_type_adoption_probabilities.csv`
+  - `30_analysis/main/results/F1_china_type_effect_sizes.csv`
 
 - F2 summary stats:
   - `30_analysis/main/results/F2_international_dimension_prevalence.csv`
@@ -97,6 +102,15 @@ Execution status log:
   - `30_analysis/main/results/F3_boundary_ambiguous_cases.csv`
   - `30_analysis/main/results/F3_logistic_coefficients.csv`
   - `30_analysis/main/results/F3_logistic_model_diagnostics.csv`
+
+- Fig. 1 implementation evidence bundles:
+  - `30_analysis/main/results/SM_Fig1_29_universities_with_evidence.csv`
+  - `30_analysis/main/results/SM_Fig1_29_universities_with_evidence.md`
+  - `30_analysis/main/results/SM_Fig1_29_universities_with_exact_policy_language.csv`
+  - `30_analysis/main/results/SM_Fig1_29_universities_with_exact_policy_language.md`
+  - `30_analysis/main/results/SM_check_framework_implementation_language_29.csv`
+  - `30_analysis/main/results/SM_check_framework_implementation_language_29.md`
+  - `30_analysis/main/results/SM_check_framework_implementation_signal_flags_29.csv`
 
 ### Supplemental outputs
 
@@ -113,18 +127,35 @@ Execution status log:
   - `30_analysis/main/results/SM_china_aigc_threshold_numeric_rules_table.csv`
   - `30_analysis/main/results/SM_china_aigc_threshold_numeric_rules_table.md`
   - Supporting distribution: `30_analysis/main/results/SM_china_aigc_threshold_distribution.csv`
+  - Full inventory: `30_analysis/main/results/SM_china_aigc_threshold_rule_inventory_full.csv`
 
 - Table S3 (procedural safeguards):
   - `30_analysis/main/results/SM_china_safeguards_table_S3.csv`
   - `30_analysis/main/results/SM_china_safeguards_table_S3.md`
+  - Coding/evidence support:
+    - `30_analysis/main/results/SM_china_safeguards_coding.csv`
+    - `30_analysis/main/results/SM_china_safeguards_evidence.csv`
+    - `30_analysis/main/results/SM_china_safeguards_qc_discordance.csv`
 
 - Table S4 (D1-D4 contrast across international and China subsets):
   - `30_analysis/main/results/SM_china_disclosure_unreliability_addon_table.csv`
   - `30_analysis/main/results/SM_china_disclosure_unreliability_addon_table.md`
+  - China D1/D2 harmonized adjudication file:
+    - `30_analysis/main/results/SM_china_d1d2_harmonized_adjudication_37.csv`
 
 - Table S5 (international operationalization signals):
   - `30_analysis/main/results/SM_international_policy_signals_table.csv`
   - `30_analysis/main/results/SM_international_policy_signals_table.md`
+  - Coding/evidence support:
+    - `30_analysis/main/results/SM_international_policy_signals_coding.csv`
+    - `30_analysis/main/results/SM_international_policy_signals_evidence.csv`
+    - `30_analysis/main/results/SM_international_policy_signals_summary.csv`
+    - `30_analysis/main/results/SM_international_policy_signals_summary.md`
+
+- China policy subtype support files:
+  - `30_analysis/main/results/SM_china_policy_subtypes.csv`
+  - `30_analysis/main/results/SM_china_policy_subtypes_counts.csv`
+  - `30_analysis/main/results/SM_china_nonadopter_policy_validation.csv`
 
 ## 7) Reliability Pipeline
 

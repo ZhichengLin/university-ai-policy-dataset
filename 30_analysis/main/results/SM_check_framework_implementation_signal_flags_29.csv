@@ -1,0 +1,31 @@
+"adopter_index","id","univ_name_en","source_url","flag_discretion","flag_pilot","flag_sampled","flag_reference_only","flag_all_required"
+1,3,"Zhejiang University","https://physics.zju.edu.cn/2025/0415/c70896a3038237/page.psp",FALSE,FALSE,FALSE,FALSE,FALSE
+2,6,"Nanjing University","https://jw.nju.edu.cn/99/f7/c26263a760311/page.htm",TRUE,FALSE,FALSE,TRUE,FALSE
+3,9,"Huazhong University of Science and Technology","https://energy.hust.edu.cn/info/1099/6770.htm",FALSE,FALSE,FALSE,FALSE,FALSE
+4,16,"Sichuan University","https://jwc.scu.edu.cn/info/1047/9802.htm",FALSE,TRUE,FALSE,FALSE,FALSE
+5,17,"Southeast University","https://jwc.seu.edu.cn/2024/0424/c21681a488726/page.htm",FALSE,FALSE,FALSE,FALSE,FALSE
+6,27,"Jilin University","https://csw.jlu.edu.cn/info/1095/7833.htm",FALSE,FALSE,TRUE,FALSE,TRUE
+7,28,"Central South University","https://gra.csu.edu.cn/info/1021/40210.htm",FALSE,TRUE,FALSE,FALSE,FALSE
+8,39,"Nanjing University of Aeronautics and Astronautics","https://cca.nuaa.edu.cn/2025/0401/c15586a371393/page.htm",FALSE,FALSE,TRUE,FALSE,TRUE
+9,44,"Xidian University","https://bksy.xidian.edu.cn/info/1003/26112.htm",FALSE,FALSE,TRUE,FALSE,TRUE
+10,46,"Beijing Jiaotong University","https://civil.bjtu.edu.cn/media/attachments/2025/04/20250429174928_210.pdf
+https://civil.bjtu.edu.cn/cms/item/23750.html",FALSE,TRUE,FALSE,FALSE,FALSE
+11,58,"Southwest Jiaotong University","http://jwc.swjtu.edu.cn/vatuu/WebAction?setAction=newsDetail&viewType=web&newsId=92FC166F4FED41B7",FALSE,FALSE,FALSE,FALSE,FALSE
+12,61,"China University of Geosciences","https://bksy.cug.edu.cn/info/1489/11884.htm",FALSE,FALSE,FALSE,FALSE,FALSE
+13,80,"Southwest University","https://ugs.swu.edu.cn/info/1012/3674.htm",FALSE,FALSE,FALSE,FALSE,TRUE
+14,86,"Northwest A&F University","https://cmee.nwsuaf.edu.cn/xwzx/xytz/52e119da18b34a6b8209c6aa20023ad2.htm",FALSE,FALSE,FALSE,FALSE,TRUE
+15,87,"Beijing University of Technology","https://undergrad.bjut.edu.cn/info/1216/3215.htm",FALSE,FALSE,FALSE,FALSE,FALSE
+16,91,"China University of Geosciences, Beijing","https://jwc.cugb.edu.cn/c/2025-05-14/826040.shtml",FALSE,TRUE,FALSE,FALSE,FALSE
+17,96,"Fuzhou University","https://jzxy.fzu.edu.cn/info/1013/3232.htm",FALSE,FALSE,FALSE,FALSE,TRUE
+18,99,"South China Normal University","http://em.scnu.edu.cn/a/20250314/10543.html",FALSE,TRUE,FALSE,FALSE,TRUE
+19,103,"Dongbei University of Finance and Economics","https://surrey.dufe.edu.cn/content_91162.html",FALSE,FALSE,FALSE,FALSE,TRUE
+20,104,"Jiangsu University","https://jwc.ujs.edu.cn/__local/4/ED/24/AA9B4251DB4F3F7C7456155F3BE_943364B4_2115F.pdf",FALSE,FALSE,FALSE,FALSE,FALSE
+21,106,"North China Electric Power University","https://yjsy.ncepu.edu.cn/tzgg/9f64c23df5914e53b821a413943280db.htm",FALSE,FALSE,FALSE,FALSE,FALSE
+22,111,"Chongqing Medical University","https://jwc.cqmu.edu.cn/info/1007/3361.htm",FALSE,FALSE,FALSE,TRUE,TRUE
+23,116,"Nanjing Forestry University","http://jwc.njfu.edu.cn//sjjx/bysjlw/20250424/i338126.html",FALSE,FALSE,FALSE,FALSE,FALSE
+24,118,"Zhejiang Normal University","https://smxy.zjnu.edu.cn/2025/0416/c17162a515544/page.htm",FALSE,FALSE,FALSE,FALSE,FALSE
+25,119,"Hainan University","https://jwc.hainanu.edu.cn/__local/1/04/AA/FD034AC1081D9280A636BC5666B_1D7E8AAB_1BE81.pdf",FALSE,FALSE,FALSE,FALSE,FALSE
+26,120,"Nanjing Tech University","https://jwc.njtech.edu.cn/info/1160/5987.htm",FALSE,FALSE,FALSE,FALSE,TRUE
+27,121,"Nanjing University of Chinese Medicine","https://jwc.hlxy.edu.cn/info/1172/6323.htm",FALSE,FALSE,FALSE,FALSE,TRUE
+28,122,"Nanjing University of Information Science & Technology","https://ycxy.nuist.edu.cn/2025/0106/c73a281139/pagem.htm",FALSE,FALSE,FALSE,FALSE,FALSE
+29,123,"Guangdong University of Technology","https://qghgxy.gdut.edu.cn/info/1105/11933.htm",FALSE,FALSE,FALSE,FALSE,TRUE

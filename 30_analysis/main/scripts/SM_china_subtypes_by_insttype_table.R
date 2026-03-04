@@ -66,8 +66,7 @@ rows <- lapply(inst_types, function(inst) {
   c(
     "Institutional type" = format_inst_label(inst),
     "n" = as.character(N),
-    "Mandated detection" = fmt_np(counts["Mandated detection"], N),
-    "Detection mentioned, not mandated" = fmt_np(counts["Detection mentioned, not mandated"], N),
+    "Detection framework present" = fmt_np(counts["Mandated detection"], N),
     "AI governance present, no detection" = fmt_np(counts["AI governance present, no detection"], N),
     "No AI policy found" = fmt_np(counts["No AI policy found in corpus"], N)
   )
@@ -75,11 +74,11 @@ rows <- lapply(inst_types, function(inst) {
 
 N_total <- nrow(d)
 counts_total <- sapply(subtype_levels, function(s) sum(d$policy_subtype == s, na.rm = TRUE))
+detection_mentioned_total <- as.integer(counts_total["Detection mentioned, not mandated"])
 row_total <- c(
   "Institutional type" = "Total",
   "n" = as.character(N_total),
-  "Mandated detection" = fmt_np(counts_total["Mandated detection"], N_total),
-  "Detection mentioned, not mandated" = fmt_np(counts_total["Detection mentioned, not mandated"], N_total),
+  "Detection framework present" = fmt_np(counts_total["Mandated detection"], N_total),
   "AI governance present, no detection" = fmt_np(counts_total["AI governance present, no detection"], N_total),
   "No AI policy found" = fmt_np(counts_total["No AI policy found in corpus"], N_total)
 )
@@ -107,6 +106,8 @@ md_lines <- c(
   "# Table",
   "",
   "Table. Institutional-type distribution of AI policy subtypes in Chinese universities (*n* = 128).",
+  "",
+  sprintf("Note. The subtype `Detection mentioned, not mandated` is omitted from this display (total *n* = %d).", detection_mentioned_total),
   "",
   "By institutional type (counts with within-type percentages)",
   "",

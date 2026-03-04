@@ -54,14 +54,14 @@ COL_CHINA <- c(
   "M+T"          = "#F39C12",
   "M+L"          = "#FAD7A0",
   "M_only"       = "#FDEBD0",
-  "No mandatory" = "#F2F2F2"
+  "No framework" = "#F2F2F2"
 )
 
 COL_TABLE <- c(
-  "Full stack"                = "#E67E22",
-  "Mandate + tool specified"  = "#F39C12",
-  "Mandate + linked-to-pass"  = "#FAD7A0",
-  "Mandate only"              = "#FDEBD0"
+  "Full stack"                  = "#E67E22",
+  "Framework + tool specified"  = "#F39C12",
+  "Framework + linked-to-pass"  = "#FAD7A0",
+  "Framework only"              = "#FDEBD0"
 )
 
 COL_INTL_BAR <- "#4A81BF"
@@ -123,11 +123,11 @@ N_intl  <- nrow(intl_raw)
 # PANEL A: DATA PREPARATION (China enforcement stack)
 # ==============================================================================
 
-china_levels <- c("Full", "M+T", "M+L", "M_only", "No mandatory")
+china_levels <- c("Full", "M+T", "M+L", "M_only", "No framework")
 
 china_df <- china_raw %>%
   mutate(Category = case_when(
-    `check_framework(0/1)` == 0L ~ "No mandatory",
+    `check_framework(0/1)` == 0L ~ "No framework",
     `tool_specified(0/1)` == 1L & `linked_to_pass(0/1)` == 1L ~ "Full",
     `tool_specified(0/1)` == 1L & `linked_to_pass(0/1)` == 0L ~ "M+T",
     `tool_specified(0/1)` == 0L & `linked_to_pass(0/1)` == 1L ~ "M+L",
@@ -140,21 +140,21 @@ china_df <- china_raw %>%
     Category = factor(Category, levels = china_levels),
     pct = round1_up(Count / N_china * 100),
     Label = case_when(
-      Category == "Full" ~ sprintf("Full stack: mandate + tool + linked: %d (%.1f%%)", Count, pct),
-      Category == "M+T" ~ sprintf("Mandate + tool specified: %d (%.1f%%)", Count, pct),
-      Category == "M+L" ~ sprintf("Mandate + linked-to-pass: %d (%.1f%%)", Count, pct),
-      Category == "M_only" ~ sprintf("Mandate only: %d (%.1f%%)", Count, pct),
-      Category == "No mandatory" ~ sprintf("No mandatory detection: %d (%.1f%%)", Count, pct)
+      Category == "Full" ~ sprintf("Full stack: framework + tool + linked: %d (%.1f%%)", Count, pct),
+      Category == "M+T" ~ sprintf("Framework + tool specified: %d (%.1f%%)", Count, pct),
+      Category == "M+L" ~ sprintf("Framework + linked-to-pass: %d (%.1f%%)", Count, pct),
+      Category == "M_only" ~ sprintf("Framework only: %d (%.1f%%)", Count, pct),
+      Category == "No framework" ~ sprintf("No detection framework: %d (%.1f%%)", Count, pct)
     )
   ) %>%
   arrange(Category)
 
-mandated_n     <- sum(china_raw$`check_framework(0/1)` == 1L)
-no_mandatory_n <- sum(china_raw$`check_framework(0/1)` == 0L)
+framework_n    <- sum(china_raw$`check_framework(0/1)` == 1L)
+no_framework_n <- sum(china_raw$`check_framework(0/1)` == 0L)
 
-mandated_label <- sprintf(
-  "Mandated\ndetection:\n%d (%.1f%%)",
-  mandated_n, round1_up(mandated_n / N_china * 100)
+framework_label <- sprintf(
+  "Detection\nframework\npresent:\n%d (%.1f%%)",
+  framework_n, round1_up(framework_n / N_china * 100)
 )
 
 # Connector y positions aligned to the stacked segments
@@ -180,7 +180,7 @@ y_full_callout <- pmin(N_china - 0.5, y_full + full_stack_nudge)
 y_mt    <- china_y$ymid[china_y$cat_chr == "M+T"]
 y_ml    <- china_y$ymid[china_y$cat_chr == "M+L"]
 y_monly <- china_y$ymid[china_y$cat_chr == "M_only"]
-y_no    <- max(72, china_y$ymid[china_y$cat_chr == "No mandatory"])
+y_no    <- max(72, china_y$ymid[china_y$cat_chr == "No framework"])
 
 # ==============================================================================
 # PANEL A: INSET TABLE (computed from latest China file)
@@ -207,28 +207,30 @@ table_df <- all_combos %>%
     Value = ifelse(is.na(Value), 0L, Value),
     Cell = case_when(
       Linked == "Linked-to-pass"     & Tool == "Tool\nspecified"     ~ "Full stack",
-      Linked == "Not linked-to-pass" & Tool == "Tool\nspecified"     ~ "Mandate + tool specified",
-      Linked == "Linked-to-pass"     & Tool == "Tool not\nspecified" ~ "Mandate + linked-to-pass",
-      TRUE                                                       ~ "Mandate only"
+      Linked == "Not linked-to-pass" & Tool == "Tool\nspecified"     ~ "Framework + tool specified",
+      Linked == "Linked-to-pass"     & Tool == "Tool not\nspecified" ~ "Framework + linked-to-pass",
+      TRUE                                                       ~ "Framework only"
     ),
     Linked = factor(Linked, levels = c("Not linked-to-pass", "Linked-to-pass")),
     Tool   = factor(Tool, levels = c("Tool\nspecified", "Tool not\nspecified")),
-    Cell   = factor(Cell, levels = c("Full stack", "Mandate + tool specified", "Mandate + linked-to-pass", "Mandate only"))
+    Cell   = factor(Cell, levels = c("Full stack", "Framework + tool specified", "Framework + linked-to-pass", "Framework only"))
   )
 
 table_core <- ggplot(table_df, aes(x = Tool, y = Linked, label = Value)) +
   geom_tile(aes(fill = Cell), color = "black", linewidth = LINE_SIZE) +
   geom_text(size = FONT_SIZE_GEOM, family = FONT_FAMILY) +
   scale_fill_manual(values = COL_TABLE) +
-  labs(title = "Within mandatory group") +
+  labs(title = "Framework-present group") +
   scale_x_discrete(expand = c(0,0), position = "top") +
   scale_y_discrete(expand = c(0,0)) +
   theme_fig1_shared() +
   theme(
-    plot.title = element_text(hjust = 0.5, size = FONT_SIZE_PT, face = "plain", margin = margin(b = 4)),
+    plot.title = element_text(hjust = 0.5, size = FONT_SIZE_PT, face = "plain", margin = margin(t = 8, b = 6)),
     axis.title = element_blank(),
-    axis.text.x = element_text(size = FONT_SIZE_PT, color = "black", margin = margin(b = 2)),
+    axis.text.x = element_text(size = FONT_SIZE_PT, color = "black"),
+    axis.text.x.top = element_text(size = FONT_SIZE_PT, color = "black", margin = margin(b = 7)),
     axis.text.y = element_text(size = FONT_SIZE_PT, color = "black", hjust = 1, margin = margin(r = 6)),
+    axis.ticks = element_blank(),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.background = element_rect(color = "black", linewidth = LINE_SIZE, fill = "white"),
@@ -266,11 +268,11 @@ p_a <- ggplot(china_df, aes(x = 1, y = Count, fill = Category)) +
   annotate("text", x = 1.52, y = y_monly, label = china_df$Label[4], hjust = 0, size = FONT_SIZE_GEOM, family = FONT_FAMILY) +
   annotate("text", x = 1.52, y = y_no, label = china_df$Label[5], hjust = 0, size = FONT_SIZE_GEOM, family = FONT_FAMILY) +
   
-  # --- "Mandated Detection" Bracket (UPDATED) ---
-  annotate("segment", x = 8.35, xend = 8.40, y = no_mandatory_n, yend = no_mandatory_n, linewidth = LINE_SIZE) +
-  annotate("segment", x = 8.35, xend = 8.40, y = N_china, yend = N_china, linewidth = LINE_SIZE) +
-  annotate("segment", x = 8.40, xend = 8.40, y = no_mandatory_n, yend = N_china, linewidth = LINE_SIZE) +
-  annotate("text", x = 8.60, y = (no_mandatory_n + N_china)/2, label = mandated_label,
+  # --- "Detection Framework Present" Bracket ---
+  annotate("segment", x = 8.84, xend = 9.02, y = no_framework_n, yend = no_framework_n, linewidth = LINE_SIZE) +
+  annotate("segment", x = 8.84, xend = 9.02, y = N_china, yend = N_china, linewidth = LINE_SIZE) +
+  annotate("segment", x = 9.02, xend = 9.02, y = no_framework_n, yend = N_china, linewidth = LINE_SIZE) +
+  annotate("text", x = 9.17, y = (no_framework_n + N_china)/2, label = framework_label,
            hjust = 0, size = FONT_SIZE_GEOM, family = FONT_FAMILY, lineheight = 1) +
   
   scale_x_continuous(limits = c(0.30, 9.20), breaks = NULL, labels = NULL) +
@@ -294,14 +296,14 @@ p_a <- ggplot(china_df, aes(x = 1, y = Count, fill = Category)) +
 
 intl_df <- data.frame(
   Dim = factor(
-    c("D1\nReliability",
-      "D2\nDisclosure",
-      "D3\nResponsibility",
-      "D4\nAI as aid"),
-    levels = c("D1\nReliability",
-               "D2\nDisclosure",
-               "D3\nResponsibility",
-               "D4\nAI as aid")
+    c("Reliability",
+      "Disclosure",
+      "Responsibility",
+      "AI as aid"),
+    levels = c("Reliability",
+               "Disclosure",
+               "Responsibility",
+               "AI as aid")
   ),
   Count = c(
     sum(intl_raw$`D1_tech_limit(0/1)` == 1L, na.rm = TRUE),
@@ -329,7 +331,15 @@ p_b <- ggplot(intl_df, aes(x = Dim, y = Count/N_intl*100)) +
   theme_fig1_shared() +
   theme(
     axis.title = element_blank(),
-    axis.text.x = element_text(color = "black", size = FONT_SIZE_PT, margin = margin(t = 2), lineheight = 0.95),
+    axis.text.x = element_text(
+      color = "black",
+      size = FONT_SIZE_PT,
+      margin = margin(t = 2),
+      lineheight = 0.95,
+      angle = 20,
+      hjust = 1,
+      vjust = 1
+    ),
     axis.text.y = element_text(color = "black", size = FONT_SIZE_PT),
     plot.title = element_text(face = "bold", size = FONT_SIZE_PT, hjust = 0.5, lineheight = 1.25, margin = margin(b = 2)),
     plot.margin = margin(t = 8, r = 8, b = 8, l = 18, unit = "pt")
@@ -343,12 +353,12 @@ p_b <- ggplot(intl_df, aes(x = Dim, y = Count/N_intl*100)) +
 p_a_final <- p_a +
   inset_element(
     table_core,
-    left = 0.26, bottom = 0.00, right = 0.99, top = 0.40,
+    left = 0.21, bottom = 0.01, right = 0.98, top = 0.37,
     align_to = "panel"
   )
 
 # Manual a./b. tags are set in p_a/p_b because auto-tagging also tags the inset.
-final_plot <- (p_a_final + p_b + plot_layout(widths = c(1.65, 1.35)))
+final_plot <- (p_a_final + plot_spacer() + p_b + plot_layout(widths = c(1.62, 0.10, 1.28)))
 
 save_device <- tryCatch({
   cairo_pdf(tempfile())

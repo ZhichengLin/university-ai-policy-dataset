@@ -1,56 +1,45 @@
-"Institutional type","n","Mandated detection","Detection mentioned, not mandated","AI governance present, no detection","No AI policy found"
+"Institutional type","n","Detection framework present","AI governance present, no detection","No AI policy found"
 "Agricultural","5","1
-(20.0%)","0
-(0.0%)","1
+(20.0%)","1
 (20.0%)","3
 (60.0%)"
 "Comprehensive","45","10
-(22.2%)","0
-(0.0%)","5
+(22.2%)","5
 (11.1%)","30
 (66.7%)"
 "Ethnic/Minority","1","0
 (0.0%)","0
-(0.0%)","0
 (0.0%)","1
 (100.0%)"
 "Finance and Economics","7","1
-(14.3%)","0
-(0.0%)","1
+(14.3%)","1
 (14.3%)","5
 (71.4%)"
 "Forestry","2","1
 (50.0%)","0
-(0.0%)","0
 (0.0%)","1
 (50.0%)"
 "Language and Culture","3","0
-(0.0%)","0
 (0.0%)","0
 (0.0%)","3
 (100.0%)"
 "Medical","12","1
 (8.3%)","0
-(0.0%)","0
 (0.0%)","11
 (91.7%)"
 "Normal (Teacher Education)","11","2
 (18.2%)","0
-(0.0%)","0
 (0.0%)","9
 (81.8%)"
 "Science and Engineering","40","12
-(30.0%)","0
-(0.0%)","1
+(30.0%)","1
 (2.5%)","27
 (67.5%)"
 "Traditional Chinese Medicine","2","1
 (50.0%)","0
-(0.0%)","0
 (0.0%)","1
 (50.0%)"
 "Total","128","29
-(22.7%)","0
-(0.0%)","8
+(22.7%)","8
 (6.2%)","91
 (71.1%)"

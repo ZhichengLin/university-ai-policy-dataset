@@ -90,7 +90,7 @@ n_tool_among_adopters <- sum(china$check_framework == 1L & china$tool_specified 
 headline_rate_cis <- bind_rows(
   rate_row(
     metric_id = "check_framework_rate",
-    label = "Mandatory check framework (all institutions)",
+    label = "Formal check framework (all institutions)",
     success = n_adopters,
     total = n_total,
     denominator_scope = "all institutions"
@@ -210,26 +210,26 @@ type_adoption <- china %>%
 
 china$enforcement_depth <- ifelse(
   china$check_framework == 0L,
-  "No mandatory",
+  "No framework",
   ifelse(
     china$tool_specified == 1L & china$linked_to_pass == 1L,
     "Full stack",
     ifelse(
       china$tool_specified == 1L & china$linked_to_pass == 0L,
-      "Mandate + tool specified",
+      "Framework + tool specified",
       ifelse(
         china$tool_specified == 0L & china$linked_to_pass == 1L,
-        "Mandate + linked-to-pass",
-        "Mandate only"
+        "Framework + linked-to-pass",
+        "Framework only"
       )
     )
   )
 )
 
 depth_order <- c(
-  "Mandate only",
-  "Mandate + linked-to-pass",
-  "Mandate + tool specified",
+  "Framework only",
+  "Framework + linked-to-pass",
+  "Framework + tool specified",
   "Full stack"
 )
 
